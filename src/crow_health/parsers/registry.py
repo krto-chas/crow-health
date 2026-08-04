@@ -21,7 +21,7 @@ class ParserRegistry:
     def parsers(self) -> tuple[ParserContract, ...]:
         return self._parsers
 
-    def register(self, parser: ParserContract) -> "ParserRegistry":
+    def register(self, parser: ParserContract) -> ParserRegistry:
         if any(existing.name == parser.name for existing in self._parsers):
             raise ValueError(f"Parser already registered: {parser.name}")
         return ParserRegistry((*self._parsers, parser))
