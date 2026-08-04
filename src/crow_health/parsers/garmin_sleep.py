@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Callable
 from datetime import UTC, date, datetime
 from hashlib import sha256
-from typing import Any
+from typing import Any, cast
 
 from crow_health.domain.sleep import (
     SleepRespiration,
@@ -18,8 +18,8 @@ from crow_health.parsers.models import ParseMessage, ParseResult, SourceDocument
 class GarminSleepParser:
     name = "garmin-sleep"
     version = "1"
-    supported_path_patterns = ("*sleepData.json",)
-    supported_media_types = ("application/json",)
+    supported_path_patterns: tuple[str, ...] = ("*sleepData.json",)
+    supported_media_types: tuple[str, ...] = ("application/json",)
 
     def __init__(self, *, imported_at: datetime | None = None) -> None:
         self._imported_at = imported_at or datetime.now(UTC)
@@ -185,12 +185,13 @@ def _typed(
 
 
 def _integer(source: dict[str, Any], field: str) -> int:
-    return _typed(
+    value = _typed(
         source,
         field,
-        lambda value: isinstance(value, int) and not isinstance(value, bool),
+        lambda item: isinstance(item, int) and not isinstance(item, bool),
         "an integer",
     )
+    return cast(int, value)
 
 
 def _number(source: dict[str, Any], field: str) -> float:
@@ -204,11 +205,13 @@ def _number(source: dict[str, Any], field: str) -> float:
 
 
 def _string(source: dict[str, Any], field: str) -> str:
-    return _typed(source, field, lambda value: isinstance(value, str), "a string")
+    value = _typed(source, field, lambda item: isinstance(item, str), "a string")
+    return cast(str, value)
 
 
 def _boolean(source: dict[str, Any], field: str) -> bool:
-    return _typed(source, field, lambda value: isinstance(value, bool), "a boolean")
+    value = _typed(source, field, lambda item: isinstance(item, bool), "a boolean")
+    return cast(bool, value)
 
 
 def _date(source: dict[str, Any], field: str) -> date:
