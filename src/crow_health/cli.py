@@ -2,12 +2,16 @@ from __future__ import annotations
 
 import argparse
 import json
+from dataclasses import asdict
 from pathlib import Path
 
 from crow_health.evidence.archive import archive_file
 from crow_health.garmin.inventory import inventory_zip, write_inventory
 from crow_health.garmin.profile import profile_json_families, write_profile
 from crow_health.garmin.schema import inspect_zip_json, write_schema_profile
+from crow_health.importing import ImportService, load_json_zip_member
+from crow_health.parsers.defaults import default_parser_registry
+from crow_health.storage import JsonlObservationStore
 
 
 def parser() -> argparse.ArgumentParser:
@@ -30,6 +34,15 @@ def parser() -> argparse.ArgumentParser:
     inspect_json.add_argument("archive", type=Path)
     inspect_json.add_argument("member_path")
     inspect_json.add_argument("--output", type=Path, default=Path("data/json_schema_profile.json"))
+
+    import_member = sub.add_parser("import-json-member")
+    import_member.add_argument("archive", type=Path)
+    import_member.add_argument("member_path")
+    import_member.add_argument(
+        "--store",
+        type=Path,
+        default=Path("data/observations.jsonl"),
+    )
 
     return root
 
@@ -74,4 +87,13 @@ def main() -> int:
                 indent=2,
             )
         )
+    elif args.command == "import-json-member":
+        document = load_json_zip_member(args.archive, args.member_path)
+        service = ImportService(
+            default_parser_registry(),
+            JsonlObservationStore(args.store),
+        )
+        report = service.import_document(document)
+        print(json.dumps(asdict(report), indent=2))
+        return 0 if report.persisted else 1
     return 0
