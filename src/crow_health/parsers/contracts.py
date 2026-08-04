@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-from collections.abc import Iterable, Mapping
-from typing import Any, Protocol
+from typing import Protocol
 
-from crow_health.evidence.models import Observation
+from crow_health.parsers.models import ParseResult, SourceDocument
 
 
 class ParserContract(Protocol):
     name: str
     version: str
     supported_path_patterns: tuple[str, ...]
+    supported_media_types: tuple[str, ...]
 
-    def parse(self, source_path: str, payload: Mapping[str, Any] | list[Any]) -> Iterable[Observation]: ...
+    def parse(self, document: SourceDocument) -> ParseResult: ...
