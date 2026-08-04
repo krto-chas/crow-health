@@ -58,14 +58,13 @@ def _package_version() -> str:
 
 
 def _git_root(cwd: Path | None) -> Path | None:
-    return _git_value(("rev-parse", "--show-toplevel"), cwd=cwd, as_path=True)
+    return _optional_path(
+        _git_value(("rev-parse", "--show-toplevel"), cwd=cwd)
+    )
 
 
 def _git_commit(root: Path | None) -> str | None:
-    if root is None:
-        return None
-    value = _git_value(("rev-parse", "HEAD"), cwd=root)
-    return value if isinstance(value, str) else None
+    return _git_value(("rev-parse", "HEAD"), cwd=root)
 
 
 def _git_value(
@@ -73,7 +72,7 @@ def _git_value(
     *,
     cwd: Path | None,
     as_path: bool = False,
-) -> str | Path | None:
+) -> str | None:
     try:
         result = subprocess.run(
             ("git", *arguments),
@@ -84,7 +83,7 @@ def _git_value(
             timeout=2,
         )
     except (FileNotFoundError, subprocess.SubprocessError):
-        return None
+        return value or None
     value = result.stdout.strip()
     if not value:
         return None
