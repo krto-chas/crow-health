@@ -41,7 +41,7 @@ class ParseResult:
         parser_version: str,
         source_evidence_id: str,
         warnings: tuple[ParseMessage, ...] = (),
-    ) -> "ParseResult":
+    ) -> ParseResult:
         return cls(
             records=records,
             warnings=warnings,
