@@ -114,15 +114,15 @@ def main() -> int:
         )
     elif args.command == "import-json-member":
         document = load_json_zip_member(args.archive, args.member_path)
-        report = _import_service(args.store).import_document(document)
-        print(json.dumps(asdict(report), indent=2))
-        return 0 if report.persisted else 1
+        member_report = _import_service(args.store).import_document(document)
+        print(json.dumps(asdict(member_report), indent=2))
+        return 0 if member_report.persisted else 1
     elif args.command == "import-json-batch":
         patterns = tuple(args.pattern or ("*sleepData.json",))
-        report = BatchImportService(_import_service(args.store)).import_zip(
+        batch_report = BatchImportService(_import_service(args.store)).import_zip(
             args.archive,
             patterns=patterns,
         )
-        print(json.dumps(asdict(report), indent=2))
-        return 0 if report.succeeded else 1
+        print(json.dumps(asdict(batch_report), indent=2))
+        return 0 if batch_report.succeeded else 1
     return 0
