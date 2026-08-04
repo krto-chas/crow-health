@@ -1,7 +1,9 @@
 import json
 import zipfile
 from pathlib import Path
+
 from crow_health.garmin.inventory import inventory_zip, write_inventory
+
 
 def test_inventory_zip(tmp_path: Path) -> None:
     archive = tmp_path / "export.zip"
