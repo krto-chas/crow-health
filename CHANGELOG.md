@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased — RC0 Pass 3B
+## Unreleased — RC0 Pass 4
+
+- Added the reusable `ObservationStore` contract.
+- Added an append-only JSON Lines storage adapter for normalized observations.
+- Added idempotent repeated imports and explicit conflict detection for reused observation IDs.
+- Added corruption detection for duplicate IDs already present in the store.
+- Added round-trip, conflict, atomicity and invalid-data tests.
+- No production database, analytics, API or Home Assistant integration has been added.
+
+## RC0 Pass 3B
 
 - Added normalized `SleepSession`, `SleepStages`, `SleepRespiration` and `SleepScore` models.
 - Added strict Garmin sleep parsing based on a value-free profile of 99 real export records and 32 observed fields.
