@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from datetime import UTC, date, datetime
 from hashlib import sha256
-from typing import Any, Callable
+from typing import Any
 
 from crow_health.domain.sleep import (
     SleepRespiration,
@@ -220,7 +221,7 @@ def _date(source: dict[str, Any], field: str) -> date:
 def _timestamp(source: dict[str, Any], field: str) -> datetime:
     raw = _string(source, field)
     try:
-        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        parsed = datetime.fromisoformat(raw)
     except ValueError as exc:
         raise ValueError(f"{field} must be an ISO timestamp") from exc
     return parsed if parsed.tzinfo is not None else parsed.replace(tzinfo=UTC)
