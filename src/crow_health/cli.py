@@ -9,7 +9,11 @@ from crow_health.evidence.archive import archive_file
 from crow_health.garmin.inventory import inventory_zip, write_inventory
 from crow_health.garmin.profile import profile_json_families, write_profile
 from crow_health.garmin.schema import inspect_zip_json, write_schema_profile
-from crow_health.importing import ImportService, load_json_zip_member
+from crow_health.importing import (
+    BatchImportService,
+    ImportService,
+    load_json_zip_member,
+)
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.storage import JsonlObservationStore
 
@@ -44,7 +48,28 @@ def parser() -> argparse.ArgumentParser:
         default=Path("data/observations.jsonl"),
     )
 
+    import_batch = sub.add_parser("import-json-batch")
+    import_batch.add_argument("archive", type=Path)
+    import_batch.add_argument(
+        "--pattern",
+        action="append",
+        default=None,
+        help="ZIP member glob; may be supplied more than once",
+    )
+    import_batch.add_argument(
+        "--store",
+        type=Path,
+        default=Path("data/observations.jsonl"),
+    )
+
     return root
+
+
+def _import_service(store: Path) -> ImportService:
+    return ImportService(
+        default_parser_registry(),
+        JsonlObservationStore(store),
+    )
 
 
 def main() -> int:
@@ -89,11 +114,15 @@ def main() -> int:
         )
     elif args.command == "import-json-member":
         document = load_json_zip_member(args.archive, args.member_path)
-        service = ImportService(
-            default_parser_registry(),
-            JsonlObservationStore(args.store),
+        member_report = _import_service(args.store).import_document(document)
+        print(json.dumps(asdict(member_report), indent=2))
+        return 0 if member_report.persisted else 1
+    elif args.command == "import-json-batch":
+        patterns = tuple(args.pattern or ("*sleepData.json",))
+        batch_report = BatchImportService(_import_service(args.store)).import_zip(
+            args.archive,
+            patterns=patterns,
         )
-        report = service.import_document(document)
-        print(json.dumps(asdict(report), indent=2))
-        return 0 if report.persisted else 1
+        print(json.dumps(asdict(batch_report), indent=2))
+        return 0 if batch_report.succeeded else 1
     return 0

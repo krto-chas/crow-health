@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased — RC0 Pass 5
+## Unreleased — RC0 Pass 6
+
+- Added deterministic discovery of matching JSON members inside ZIP archives.
+- Added reusable batch import orchestration built on the existing single-document pipeline.
+- Added per-member and aggregate reports for parsed, inserted, existing and failed records.
+- Added failure isolation so one malformed member does not prevent later members from being processed.
+- Added the `import-json-batch` CLI command with repeatable glob patterns.
+- Added tests for sorting, filtering, idempotency, partial failure and empty matches.
+- No scheduler, resumable job state, concurrency, analytics, API or Home Assistant integration has been added.
+
+## RC0 Pass 5
 
 - Added a reusable import orchestration service between source adapters, parser registry and observation storage.
 - Added exact ZIP JSON-member loading with SHA-256 source identity.
