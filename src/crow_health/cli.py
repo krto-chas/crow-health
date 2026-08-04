@@ -15,12 +15,15 @@ from crow_health.importing import (
     load_json_zip_member,
 )
 from crow_health.parsers.defaults import default_parser_registry
+from crow_health.runtime import runtime_identity
 from crow_health.storage import JsonlObservationStore
 
 
 def parser() -> argparse.ArgumentParser:
     root = argparse.ArgumentParser(prog="crow-health")
     sub = root.add_subparsers(dest="command", required=True)
+
+    sub.add_parser("version")
 
     archive = sub.add_parser("archive-export")
     archive.add_argument("path", type=Path)
@@ -74,7 +77,9 @@ def _import_service(store: Path) -> ImportService:
 
 def main() -> int:
     args = parser().parse_args()
-    if args.command == "archive-export":
+    if args.command == "version":
+        print(json.dumps(runtime_identity().to_dict(), indent=2))
+    elif args.command == "archive-export":
         print(json.dumps(archive_file(args.path, args.evidence_root).to_dict(), indent=2))
     elif args.command == "inventory-export":
         inventory = inventory_zip(args.path)
