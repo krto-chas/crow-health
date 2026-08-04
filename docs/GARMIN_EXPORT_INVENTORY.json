@@ -1,0 +1,1897 @@
+{
+  "entries": [
+    {
+      "path": "AVC_CORE_DATA_CUSTOMER_DOMAIN/coreDataCustomerInfo.json",
+      "sha256": "2e8fcdfd49d95b1d209e7febc55b5494a601e1fbc1fb69571525fd5e22a03ecb",
+      "size_bytes": 367,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-ATP/Garmin_Coach_Pause_History.json",
+      "sha256": "5e9e92dfac9001340602c0bc27fa90843ab871a38482e3cb948cb319f64af71d",
+      "size_bytes": 590,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2019-09-30_2020-01-08.json",
+      "sha256": "4ef0aa9caaff8f05972013facc69d0c1593b35594b7b652cc98e787c67180565",
+      "size_bytes": 1187,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2020-01-08_2020-04-17.json",
+      "sha256": "02496036353633738fbf485181fd3efb68f61291e96ceb0ae8525b6538c1724c",
+      "size_bytes": 6466,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2020-04-17_2020-07-26.json",
+      "sha256": "96f99f0866fc74005f2f6af3e0e918e41acaee4bd9258e34027f7507df4e7f58",
+      "size_bytes": 3507,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2020-07-26_2020-11-03.json",
+      "sha256": "361d26dde462407e5b21c42320025fb98f6334865855bcdb04c51c2081c8a089",
+      "size_bytes": 1740,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2020-11-03_2021-02-11.json",
+      "sha256": "6373a7ed31bc8d08df7a0ccac93f8dd713033ce099828f020ab37b5b8e5b6047",
+      "size_bytes": 1183,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2021-02-11_2021-05-22.json",
+      "sha256": "e4a39e14045ff9b20b10c88f002d0e1ab6f3ca69d62b96488b3c991822b043ac",
+      "size_bytes": 7095,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2021-05-22_2021-08-30.json",
+      "sha256": "944eeb87eba824d99ab82d707d56d10e4202d6dce06b0ac6e67c994b3d12f870",
+      "size_bytes": 3338,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2021-08-30_2021-12-08.json",
+      "sha256": "b57ee9107a54a5323f222e1e01237a1dfa071ac00633c356908dd1f9087b471b",
+      "size_bytes": 3032,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2021-12-08_2022-03-18.json",
+      "sha256": "e11dc5fb68840cc55efcb8faa173897dc695c79897447fd7ce3b94c877ae0659",
+      "size_bytes": 3834,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2022-03-18_2022-06-26.json",
+      "sha256": "151467308e0a461f0afdd9441a8c4204207cf4fd519074f34052161ec0390def",
+      "size_bytes": 3848,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2022-06-26_2022-10-04.json",
+      "sha256": "6c9467c6c72f53e176a05280320dd65c4f54ed35cac4212e7339eafed3d56c96",
+      "size_bytes": 4748,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2022-10-04_2023-01-12.json",
+      "sha256": "6add4a6be40ddaf6789ac265d1d849c6d82bae14a1f79710abc9e39c11f96832",
+      "size_bytes": 10189,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2023-01-12_2023-04-22.json",
+      "sha256": "3e2cbe662de13434fd718c95380655fe479fb571209d0791810898a1146041da",
+      "size_bytes": 15483,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2023-04-22_2023-07-31.json",
+      "sha256": "df023df90e6329a403f65a560f6e0777d6dfa517fface370f63627676945638b",
+      "size_bytes": 24290,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2023-07-31_2023-11-08.json",
+      "sha256": "84fc7492a66fa7bd32c841b812fb694165802e796e7cf03cf98de92e5021fa42",
+      "size_bytes": 10198,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2023-11-08_2024-02-16.json",
+      "sha256": "253cee4f7432df39b0e1710b95e68cbdc5622752dbb0c81efa3a53331dab05c4",
+      "size_bytes": 21216,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2024-02-16_2024-05-26.json",
+      "sha256": "4972fea14f80a6081ab78cfc8ae9e26c475446995ce2d677104ae090fd5ae1b3",
+      "size_bytes": 17420,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2024-05-26_2024-09-03.json",
+      "sha256": "1444e1adb9c4309ed5eaf3a6609e84b6ccb0d0e38529826f7b01c1cb9e28aa79",
+      "size_bytes": 2483,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2024-09-03_2024-12-12.json",
+      "sha256": "69d735ea55c674c6e165e113bd1be2a23357830b0ae197e42d65b08b83ae5338",
+      "size_bytes": 1404,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2024-12-12_2025-03-22.json",
+      "sha256": "2e5afbdb1950b829878f27d0e2afe2eadfd33769f1c70e6bde5e004d3a035338",
+      "size_bytes": 11620,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2025-03-22_2025-06-30.json",
+      "sha256": "8af482253b20bd1310e87873440813a498c12a0935a77d81f245ff7e5b71f5bd",
+      "size_bytes": 1751,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2025-06-30_2025-10-08.json",
+      "sha256": "9edda8f38215c3d3ed68aa52761c515a8f23816246e9eeba7c7cc6aa9e1fabf6",
+      "size_bytes": 719,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2025-10-08_2026-01-16.json",
+      "sha256": "8cc121cdb0978dc83009796a18ef7a5f1efc9a30b2efe0b83eeeb457fa438929",
+      "size_bytes": 4573,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2026-01-16_2026-04-26.json",
+      "sha256": "982c506f220b2dcc728fd6a2ee5cc4b5ff6b9b1f18ac9e3459e2f057d26b8837",
+      "size_bytes": 4927,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/HydrationLogFile_2026-04-26_2026-08-04.json",
+      "sha256": "d960edce1d01d33020425d8e93749fce1b2b4b121218d8c2942da5aebacf8790",
+      "size_bytes": 2469,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2017-10-31_2018-02-08.json",
+      "sha256": "9aa94a729ced0cf0e92747d8923cd1f958845054699a2972d24c2eb8b3fbcc4a",
+      "size_bytes": 36399,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2018-02-08_2018-05-19.json",
+      "sha256": "f22ad9083f80c0ee50a67185c12bee48b06e3eccf478d986892ae901bda57053",
+      "size_bytes": 165401,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2018-05-19_2018-08-27.json",
+      "sha256": "a28a27698effd6b0234004ac9c8c67df204473fca349dc79dfb54bddc800b9f2",
+      "size_bytes": 221445,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2018-08-27_2018-12-05.json",
+      "sha256": "1b95a48b0695800cdad7b00cd0d46e518cc04787c400f11413317d64e09da0d3",
+      "size_bytes": 127529,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2018-12-05_2019-03-15.json",
+      "sha256": "4aafb6ef1512de05f7586454a1073352696c7f7d80a10fa949c01647b51d6e9e",
+      "size_bytes": 166607,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2019-03-15_2019-06-23.json",
+      "sha256": "f559949bd3edb570242603ba7d04c3b95045b514add4dc7e4a3b0ce950610624",
+      "size_bytes": 267406,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2019-06-23_2019-10-01.json",
+      "sha256": "00cf26123f7d055be1f2f2a17045698390966099083b39198a08761b8aba13c0",
+      "size_bytes": 265792,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2019-10-01_2020-01-09.json",
+      "sha256": "e22b8c48bb14dbfd64622f7d52832efe8f34ec5339d5648b59eac238857e9dfd",
+      "size_bytes": 270115,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2020-01-09_2020-04-18.json",
+      "sha256": "0363bb831f0b37a3f550f19751b0a409bf1a61bb9c4424e1572adc457c2f63e8",
+      "size_bytes": 273749,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2020-04-18_2020-07-27.json",
+      "sha256": "6edb0e03980ef5159e3d2a6d1dd271f1abc5b35c7e74c6715853812a63caad3c",
+      "size_bytes": 272725,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2020-07-27_2020-11-04.json",
+      "sha256": "f14b09f6cbbdc14550b88ecb320365fa41260ce69c3768d83ec624e42af7678c",
+      "size_bytes": 269647,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2020-11-04_2021-02-12.json",
+      "sha256": "3bf3e0cbc127184e489891e8103007cb8ffb527b50e4a70ca4d27e91376f6543",
+      "size_bytes": 263247,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2021-02-12_2021-05-23.json",
+      "sha256": "e6818d56d351835027b86397cc9cdb49e6a444a086270b8fdb2cdc0cec104ed0",
+      "size_bytes": 262382,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2021-05-23_2021-08-31.json",
+      "sha256": "877e388617b0d6857a644e6242963ae29dd28bb91137162e59aa65f99e999f01",
+      "size_bytes": 236797,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2021-08-31_2021-12-09.json",
+      "sha256": "2fde1ed15750274650f8cf83e5438341aa076ab49462afb961daba16a1cb1e05",
+      "size_bytes": 255895,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2021-12-09_2022-03-19.json",
+      "sha256": "00e35a2fc2c1d39202f5bbb5ff523a9eb2380a03c4943b3b93d124d1c36ac6ac",
+      "size_bytes": 143723,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2022-03-19_2022-06-27.json",
+      "sha256": "796788ab52a73220d064e44e358088e7a7af1bcb3a5dc26b607b0f2991998bc9",
+      "size_bytes": 364537,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2022-06-27_2022-10-05.json",
+      "sha256": "a61f040964a3dc595e0e6d444ca97caaeb16b3012068546bc1c2575cc37e7a4d",
+      "size_bytes": 361556,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2022-10-05_2023-01-13.json",
+      "sha256": "6b609a83d2f2a35f6fc6913072039d5b74f3e053d3ce73921c7d8095e6c298ec",
+      "size_bytes": 367347,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2023-01-13_2023-04-23.json",
+      "sha256": "20b5d92ad3ef3551e5e3e8dddb48f368874636fb727f90527a82a2731b82f544",
+      "size_bytes": 384132,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2023-04-23_2023-08-01.json",
+      "sha256": "1bc421f00f8a975edbc04db966f859245398f6a511a7087472059f8fd19b3946",
+      "size_bytes": 388539,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2023-08-01_2023-11-09.json",
+      "sha256": "4852e4c93b57ce7893a9bc00dbc1659bd3c37ca89dd1cfcdb6be5b52d4d13b6f",
+      "size_bytes": 373543,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2023-11-09_2024-02-17.json",
+      "sha256": "b66280b026c0478063ffd056f779ea3144a5c2f9200d076eb0fbcd61a4aac911",
+      "size_bytes": 375598,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2024-02-17_2024-05-27.json",
+      "sha256": "1f37edfd027c76cbe25052f2aae31ff5cb6b6cf5dacede416b454a2856de418f",
+      "size_bytes": 380459,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2024-05-27_2024-09-04.json",
+      "sha256": "c31a8345834275d34ac27a7239801716cdfccb1316aaa01384afe6f1b768478a",
+      "size_bytes": 377423,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2024-09-04_2024-12-13.json",
+      "sha256": "e64278f5ec167e8a97d87c14a12a7da4ed5eaf56266cd94813f01402a4d09cc9",
+      "size_bytes": 391464,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2024-12-13_2025-03-23.json",
+      "sha256": "a2d410fc582d4901cdbceb3065132c5cb82207ad9935282ac7b0d7ee2a717d2c",
+      "size_bytes": 402479,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2025-03-23_2025-07-01.json",
+      "sha256": "d45e1de3df1f42c4c3b9848425a9c894f36a24f31652a0c41d816cad29bdc051",
+      "size_bytes": 397665,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2025-07-01_2025-10-09.json",
+      "sha256": "cfad0690f44664b6506d93fa33b5e62417a2adeb58b6f7a111f2df45b930fe40",
+      "size_bytes": 397573,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2025-10-09_2026-01-17.json",
+      "sha256": "56d20be30f7a8891eaaf4b8ab73cfbeefb3747f081eaa09cb234c418dd4626e9",
+      "size_bytes": 399855,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2026-01-17_2026-04-27.json",
+      "sha256": "505305d248cc7691512cd99f2225895f827659f6e9f4f40ce11ade0eedcef2fa",
+      "size_bytes": 399574,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Aggregator/UDSFile_2026-04-27_2026-08-05.json",
+      "sha256": "3ed8d77126c2da0ae8bb4bf9757a9c902afefcfc82204dbcb12eb89fbbb658af",
+      "size_bytes": 398964,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Device/66933293_DeviceBackups.json",
+      "sha256": "6c6dcb48bcbc65875d25f6fed87a6f7886afb5440abdc4c74bcfaf233a8acb61",
+      "size_bytes": 183,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Device/device-backups-files_Part1.zip",
+      "sha256": "efde1e07c1ed3fc76c071d2b72af95f3a1d98c826d37b504aab19639a051b9f9",
+      "size_bytes": 64049,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_0_summarizedActivities.json",
+      "sha256": "ecf70dfcf92a499372b35813665ab864a7cab22b98d657535cf3d26de5463603",
+      "size_bytes": 7660303,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_PrimaryTrainingBackup_Part1.zip",
+      "sha256": "4e509d6f4bb277d5e3d96c31e72d9a20c4d71217b93c0889389d1682cdfe62c7",
+      "size_bytes": 8538,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_gear.json",
+      "sha256": "14eb5ccc91d89acbafb9c5cf6b5015c3daafe7e12c34951fce52646eb7b899a9",
+      "size_bytes": 25073,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_personalRecord.json",
+      "sha256": "27446828f264c78288535e6c4c81edb7a1b7c4b7bee664ee30e2a19bb02e4658",
+      "size_bytes": 6261,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_trainingPlan.json",
+      "sha256": "e10808d43975dc400731053386849f864f297e6c4f7519c380f3dbaf7067a840",
+      "size_bytes": 4,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Fitness/kristoffer.toivanen@gmail.com_workout.json",
+      "sha256": "efaad9befeb227db59885c649e920f81436a721c5f0a9bca49b0d883ab09ff2b",
+      "size_bytes": 424534,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20180510_20180818_66933293.json",
+      "sha256": "92044524485e305ae8bf1954596d090252642cd9f2c02744eaeafa2d7682ee9d",
+      "size_bytes": 1306,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20230414_20230723_66933293.json",
+      "sha256": "1e97157ee617fdd5bae4e908d89e11e2d5109c06d3439322ff4e8a9c6721bff1",
+      "size_bytes": 272,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20230723_20231031_66933293.json",
+      "sha256": "53a4eb07035d62b4a9bf7ec3ec26e2517a4adf56e30194a3ec29e70223bf2de2",
+      "size_bytes": 814,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20231031_20240208_66933293.json",
+      "sha256": "3535f0eee2c76b85d35cf851f9229ae970d501c87d262044f3cd6f11f49cca52",
+      "size_bytes": 2444,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20240208_20240518_66933293.json",
+      "sha256": "ce2ee37de5e4ab0789c78b3c5009cf0bcd0bdd6e50ce0f2aaa91e5ad21d5ed69",
+      "size_bytes": 4066,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20240518_20240826_66933293.json",
+      "sha256": "7cd1fe55fd92cc16911f233bf0b664d3b8446a164b005149505066ddd9937dd6",
+      "size_bytes": 543,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20240826_20241204_66933293.json",
+      "sha256": "9a1a8fe588e709bb00487887496d3dd21fa614f22255b44f64584d7f8889f4f1",
+      "size_bytes": 272,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20250622_20250930_66933293.json",
+      "sha256": "94dbef06e28103568894d89cf1f1ef98af0c01fd7a0f6906bac6a2ae57e48f47",
+      "size_bytes": 272,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/ActivityVo2Max_20250930_20260108_66933293.json",
+      "sha256": "ff465c6ae978bcd24ddd7f31146c8cf2caf5959d725f4004d78e51a6cfa79a28",
+      "size_bytes": 543,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20220618_20220926_66933293.json",
+      "sha256": "d4fbb83b546d9be6abc5bdbe10931e21f2c806d006a10cfc6a73721fe0192fd2",
+      "size_bytes": 12722,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20220926_20230104_66933293.json",
+      "sha256": "b0ced96f9e3dc573c0b5493221a331c90ff14378ae2652822c97bf5bbb127724",
+      "size_bytes": 53967,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20230104_20230414_66933293.json",
+      "sha256": "44acc8cedccdf8852c00f07795ff13799009c7e28e7726a52044348dddac3d06",
+      "size_bytes": 46242,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20230414_20230723_66933293.json",
+      "sha256": "9597ee4c8a4bc2398b675b1a1d599a5e4eff6aa3ad660e58d07d10b7599c7c24",
+      "size_bytes": 46123,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20230723_20231031_66933293.json",
+      "sha256": "d74a44892a768970e85e354e5a816a9a4acba4530063eec4504162cb615b07fe",
+      "size_bytes": 37277,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20231031_20240208_66933293.json",
+      "sha256": "30a9723324b5566c9bbeb5f9ce5aee7a3140bdc39b6862cb1c177dc73620f47e",
+      "size_bytes": 46097,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20240208_20240518_66933293.json",
+      "sha256": "073d60006f38ef922845bc60f0133066a6085f25ef1e9c0cf4a82611e7e3fd56",
+      "size_bytes": 41729,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20240518_20240826_66933293.json",
+      "sha256": "92a21e8f8ef5ceadb6b438045aec517a868360cca5a8f48904a0f785a31442ec",
+      "size_bytes": 30214,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20240826_20241204_66933293.json",
+      "sha256": "ceccdc75efe0c673ac4cbce86da036ee456c4ea78fd98eb4ac3f30a93b4b0fd8",
+      "size_bytes": 29571,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20241204_20250314_66933293.json",
+      "sha256": "4241b9c7702223c12397bda11f0adc2b31a5530519ae9126d5102aa91a782ea9",
+      "size_bytes": 37152,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20250314_20250622_66933293.json",
+      "sha256": "2a3ffc3b4c68b9479f8caf698c3e7a1c9a1e3707c73020370e3ec9d9cffbc687",
+      "size_bytes": 28765,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20250622_20250930_66933293.json",
+      "sha256": "df5d9bb975d03c9923b29f7a4bb6f355c40033d681232689cff2ff82e9d53c01",
+      "size_bytes": 28731,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20250930_20260108_66933293.json",
+      "sha256": "6db8b16143fe0b9c8919d62d95b2b3e28c2ad4d21b2a843cdb64fd10ab24ab0e",
+      "size_bytes": 31022,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20260108_20260418_66933293.json",
+      "sha256": "a90dd053fffb87b9dac93680cb51d6a7662db989e857b198f32fa6cc0a354701",
+      "size_bytes": 31654,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20260418_20260727_66933293.json",
+      "sha256": "7ec62f4032d722027012955034bb23b37c0084f4a478b5b756f64821a4b0e41f",
+      "size_bytes": 29593,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsAcuteTrainingLoad_20260727_20261104_66933293.json",
+      "sha256": "b28389059d07160ba277125ca20a5dbcd57ba65142bb0fe92f9da63afdb0d470",
+      "size_bytes": 2689,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20190922_20191231_66933293.json",
+      "sha256": "1ef8a8564a0fd17c171aced0ec65525ec5852906689667f1e36fb5d0ae19f766",
+      "size_bytes": 6046,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20191231_20200409_66933293.json",
+      "sha256": "12cca87552f0f8b3e62e3f2c8787f54902bda7af4e7aae7a464857371cb85a34",
+      "size_bytes": 42316,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20200409_20200718_66933293.json",
+      "sha256": "b254db813962f50e4f199d4ebf277d4f6997fdcd60a96ad09bbb1d8968d78a96",
+      "size_bytes": 39991,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20200718_20201026_66933293.json",
+      "sha256": "266f2ab79660344801f4027a3ecaa027542ec0af54901097d00b9ae94e792e4a",
+      "size_bytes": 21391,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20201026_20210203_66933293.json",
+      "sha256": "1deda1b7216411b5795d8c531747e47d19c93a114e05a68ad119b503e9f99550",
+      "size_bytes": 11161,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20210203_20210514_66933293.json",
+      "sha256": "33176ff3d15d3296980266c4f33d34065ebabc43e939d9607fabf14a1f58ccb0",
+      "size_bytes": 11161,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20210514_20210822_66933293.json",
+      "sha256": "ade9000cc82b001f87c90b6928ea956ba44606d986929d7318342617f7d5b4a5",
+      "size_bytes": 26212,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20210822_20211130_66933293.json",
+      "sha256": "a5a89160c1aab7723609d7f2d6bce60b031aa39cf3496d94adefc5f00e99498e",
+      "size_bytes": 29761,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20211130_20220310_66933293.json",
+      "sha256": "c5c160e7ab6799d7f7e489c4ae411d68489875e0af92792038d346c26e79b7e3",
+      "size_bytes": 20926,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20220310_20220618_66933293.json",
+      "sha256": "6e6aa4511f4f951448c0af834b7597928ebdc2d24fe65b62d915310c257dbff0",
+      "size_bytes": 54406,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20220618_20220926_66933293.json",
+      "sha256": "610b21df7d1ea37d7a9491a968bb060d3d58573f02f7afe237b10299f4648cb1",
+      "size_bytes": 88261,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20220926_20230104_66933293.json",
+      "sha256": "eb1957f08f7b8a865defbc618e35cb10a753119dc7e59dbc1267710fac1eabcd",
+      "size_bytes": 87016,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20230104_20230414_66933293.json",
+      "sha256": "c3aec6f9b0be13a7205e5134f120dc3647084bc4faf837cc2453076d6c32650d",
+      "size_bytes": 84777,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20230414_20230723_66933293.json",
+      "sha256": "23b5605de2c803155969ee05bc54024930ac373d8e18a6abd872a1b5f420db4c",
+      "size_bytes": 175719,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20230723_20231031_66933293.json",
+      "sha256": "d802561379fb3545be4a8bddf30276c1ee7eb54173ccdd5039c45e25dadcdd08",
+      "size_bytes": 117667,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20231031_20240208_66933293.json",
+      "sha256": "c945be8146af8884e5d106eb9e25d6f914facd6105d069a8f6c3b12656cc559e",
+      "size_bytes": 136189,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20240208_20240518_66933293.json",
+      "sha256": "d028cdad3fe48da36fbe3187472ad71e781c4bd6bfeca307c5a161111dd8fad7",
+      "size_bytes": 146005,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20240518_20240826_66933293.json",
+      "sha256": "13750b1399837f1a79ca78f2d30f0331a936ec4d01918dee07081baf65959eba",
+      "size_bytes": 188917,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20240826_20241204_66933293.json",
+      "sha256": "0b4d7718eb91e27f7477244f7aff8b12e4a7fa989da0cfff16baad4be7025d88",
+      "size_bytes": 130974,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20241204_20250314_66933293.json",
+      "sha256": "4b09953cca9437fb5622239d904ba9b3add9e4d436cf3e43a72237cbdb18d8a6",
+      "size_bytes": 147897,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20250314_20250622_66933293.json",
+      "sha256": "928d7e9ec381124c356b929b9d50d0e33e8b11d6ab47d1daed7e60b6968cb9d5",
+      "size_bytes": 129363,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20250622_20250930_66933293.json",
+      "sha256": "16b4818f0ee0c9229c9d64f15b2f05a1f1ce431f913a197beaff80ecc3d3b81e",
+      "size_bytes": 164250,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20250930_20260108_66933293.json",
+      "sha256": "d3d07ecf1ee83f408d4f66ae207a9ce4027e545f926977d87841fced61177256",
+      "size_bytes": 159413,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20260108_20260418_66933293.json",
+      "sha256": "85e34b6f3b49716dc17c73c5a9459afee97f2768ddbe7a6ff4f24fc0e00e31a6",
+      "size_bytes": 138403,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20260418_20260727_66933293.json",
+      "sha256": "ad2a7f256a3d1d080dc0ecf0cc44b6c2ed824eac68fd768f11f0b76fc3b82cd9",
+      "size_bytes": 131115,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsHeatAltitudeAcclimation_20260727_20261104_66933293.json",
+      "sha256": "8ac0a07a125617eb50e37f81c49c27012308c8178e809fc64fc4f2dd7fde2f43",
+      "size_bytes": 11138,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20180130_20180510_66933293.json",
+      "sha256": "a0d2ecc9d375270d3c22c6baa9e545816f2ad2ab5e7246820192c1be2addd00b",
+      "size_bytes": 5139,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20180510_20180818_66933293.json",
+      "sha256": "547390d5aa92f71faee574134b01d7e86b71c9623941f40198915ced338613ed",
+      "size_bytes": 5348,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20180818_20181126_66933293.json",
+      "sha256": "c268c5927badbe23b715ace99b7fbcf4fe12866b40e4645ad68c1df928e2da53",
+      "size_bytes": 5049,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20181126_20190306_66933293.json",
+      "sha256": "04f3bb8a3dab4e45fd06fc8489d5d2a251604548a1beaece772df5ab7b87bd7a",
+      "size_bytes": 40015,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20190306_20190614_66933293.json",
+      "sha256": "02e03c1361afeec76bc46643b622a0e32961c8ea63ffbb17bdc6f01c56c4a4e5",
+      "size_bytes": 99372,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20190614_20190922_66933293.json",
+      "sha256": "636d1b5b80817717ae427e8a1ae4080b89154ea319c17d7e425cc07a9d16c49c",
+      "size_bytes": 7583,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20190922_20191231_66933293.json",
+      "sha256": "143f773432a65f2e08a9abb8d60598738bf42022953a3fd2d16734f9bf8487bb",
+      "size_bytes": 6668,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20191231_20200409_66933293.json",
+      "sha256": "e05e9a9d24457da204467ff44042d2c4487c7f32cbad87b7427bff74251b2610",
+      "size_bytes": 11372,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20200409_20200718_66933293.json",
+      "sha256": "d467c95008af09361bd96a3ee080dd8427a12900a024fb51faf97d7b9f18310e",
+      "size_bytes": 15371,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20200718_20201026_66933293.json",
+      "sha256": "7ac4571c30e52a38cab337c8406474e271288d85ef6802d9d692a4987337aa66",
+      "size_bytes": 6305,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20201026_20210203_66933293.json",
+      "sha256": "461f595418c3f6d72b06074da8594659c4f546a118bea468f3a6ae6000f65873",
+      "size_bytes": 6949,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20210203_20210514_66933293.json",
+      "sha256": "b9aadc2c5f0da53c85e201f6ffd624744d67bc8ecc84bc5052e40ed42749cbc7",
+      "size_bytes": 9800,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20210514_20210822_66933293.json",
+      "sha256": "ffc35761e4a1e9c25d78a471eaa492e6e1761a0f61dc9a062061a04f23db9deb",
+      "size_bytes": 13596,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20210822_20211130_66933293.json",
+      "sha256": "6ba087ec2c20c06bd9e875903e99f7fffd3623b60d09431011aaa342f26e07de",
+      "size_bytes": 6989,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20211130_20220310_66933293.json",
+      "sha256": "5a04cdbd6c01628c69f2165e3e2bae76910c9f50df152532a22fe74d9e7a5790",
+      "size_bytes": 503,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20220310_20220618_66933293.json",
+      "sha256": "8a5ac7908a8eac7c955681a1a330ce407fc7cf4685e796e9f6f7b7fc0ee824f4",
+      "size_bytes": 2180,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20220618_20220926_66933293.json",
+      "sha256": "ae601f1464246bde80af1d4e848f3e236c8096aa4f8c9c53acadcb7367ad5c1c",
+      "size_bytes": 4282,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20220926_20230104_66933293.json",
+      "sha256": "414cffb825b151f3f68c1d66c6a6b86073a371c8e2c33793fdb7653dc9916eae",
+      "size_bytes": 2737,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20230104_20230414_66933293.json",
+      "sha256": "b5173e532a653a0b39af1f156663a255805372c674f8886e4d1cff57e55b4526",
+      "size_bytes": 4701,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20230414_20230723_66933293.json",
+      "sha256": "f5bff70767537493ad662f928ef3350b72c9c988c4f3d36befbd1cf7bfd77105",
+      "size_bytes": 7408,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20230723_20231031_66933293.json",
+      "sha256": "ca5d78d2d41ab57106762ce70f2b594d7386f49d1b5e03d6ca91c5dd11b05c7e",
+      "size_bytes": 3150,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20231031_20240208_66933293.json",
+      "sha256": "e004285a6b9a666b1c332bca0734daf99493c7feeab51508662939822cd1e297",
+      "size_bytes": 13069,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20240208_20240518_66933293.json",
+      "sha256": "25cb5e334753df443763d8cc3d5c2397811b6e62a9f4437090780089ddd8a60d",
+      "size_bytes": 8466,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20240518_20240826_66933293.json",
+      "sha256": "2e6c72a25a3279605662087ba286df4a91b2e82d708bf74cafc641324dd78bea",
+      "size_bytes": 5856,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20240826_20241204_66933293.json",
+      "sha256": "62227f3523ee4782550b66ebbf3f7ecbf7bb98ac0641bf04066fbbd9d2923f12",
+      "size_bytes": 5111,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20241204_20250314_66933293.json",
+      "sha256": "7c719b682ec4771ad0640a34102d7786c1779131d353b60dfc888ea0f77572f5",
+      "size_bytes": 11481,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20250314_20250622_66933293.json",
+      "sha256": "6167836d26cd894d574f84d8460d02ca420f53e8ae76a052797376ff0eb6748a",
+      "size_bytes": 3714,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20250622_20250930_66933293.json",
+      "sha256": "922fd9a38d2385985b76d836c9765135d28d3f9eee2b32f7203f0306270af4e6",
+      "size_bytes": 8381,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20250930_20260108_66933293.json",
+      "sha256": "41a12fcfcb745d2710c5e7fa7feedffde81f2af6e5b3a25e3146047edb507fbd",
+      "size_bytes": 17461,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20260108_20260418_66933293.json",
+      "sha256": "73b0c5f5c81b309e4da48f66851857b96e53348f62aa969aec78b222a5ab57ae",
+      "size_bytes": 10860,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20260418_20260727_66933293.json",
+      "sha256": "0f3f80bb593fe30f346a0e3664f66ab2f46b1dad6db268663867dabb4004e861",
+      "size_bytes": 3197,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/MetricsMaxMetData_20260727_20261104_66933293.json",
+      "sha256": "420763ae4a0a03a1d1201a01f0b3e6c1b5a0023680faf82f8e62c75765b01748",
+      "size_bytes": 252,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20211130_20220310_66933293.json",
+      "sha256": "c1be8135154c12549253be2e38c23960d7e4f95a9d178c5bc245be643ecb6f05",
+      "size_bytes": 8821,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20220310_20220618_66933293.json",
+      "sha256": "c4c152c0a03feb8162278ec6e6ce69a2ac1b9c56c683de5eb95913f74aad66dc",
+      "size_bytes": 23129,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20220618_20220926_66933293.json",
+      "sha256": "4f12c97576aba2598a7a80468dc552afb6c85bfef67bdc49a13af2a1950884ae",
+      "size_bytes": 28225,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20220926_20230104_66933293.json",
+      "sha256": "faab2e4b5d02ae5c0a12751dda1731e417cb45e6befbe8de8d2bd4b713deb3f8",
+      "size_bytes": 45277,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20230104_20230414_66933293.json",
+      "sha256": "3b411d179f51e22106cdc87d55001edd39f04318994e86077b5654740c271cf8",
+      "size_bytes": 48413,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20230414_20230723_66933293.json",
+      "sha256": "d701360411cf736eaf066ccb305765e8dc9ce852cc41593cdcf37e48ee1b18d2",
+      "size_bytes": 56253,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20230723_20231031_66933293.json",
+      "sha256": "91c771b586ef4832833d43c9326f404f6b5c007e6dd46585c6038edfab977346",
+      "size_bytes": 46649,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20231031_20240208_66933293.json",
+      "sha256": "8c2a063afde142eb17432bb03f624b2f6b6a5912df53bcf172dfa3af8be2a662",
+      "size_bytes": 52921,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20240208_20240518_66933293.json",
+      "sha256": "3ccd42ee050576d95b11a4fb184b1341b3e7e3e897d2d2eb12d877604bd47144",
+      "size_bytes": 49700,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20240518_20240826_66933293.json",
+      "sha256": "d48d98a239f4fbf02931a4f912416f17b5da04ad990d540a38a81eba5cc2011a",
+      "size_bytes": 41658,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20240826_20241204_66933293.json",
+      "sha256": "e4bb11c7fc808a496bff44ec3329fdda251a82dfe99a125aea94d75bcd98034b",
+      "size_bytes": 41357,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20241204_20250314_66933293.json",
+      "sha256": "0a20ae6ee266326e5cd7ad2a76a264801a2087d0410b3300cdfde22d65ca234e",
+      "size_bytes": 46492,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20250314_20250622_66933293.json",
+      "sha256": "cbbf852a69a2fb4ed3b940cedc85e110bce6fe131916be03174eb52775078ee9",
+      "size_bytes": 40561,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20250622_20250930_66933293.json",
+      "sha256": "55ae3ca559e07c2fd72afd3d1602af5d63d42f3df748e36a8f826d1cae8494f1",
+      "size_bytes": 40710,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20250930_20260108_66933293.json",
+      "sha256": "164c1c76551b3a4719e5d201a249b9e024611adb4383a2d823fca11f857a5ba3",
+      "size_bytes": 42337,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20260108_20260418_66933293.json",
+      "sha256": "1b1aa4d7b734b912eb671885130079401f766100132fc3ca0205920f93756256",
+      "size_bytes": 42729,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20260418_20260727_66933293.json",
+      "sha256": "25dcdbb82c1ff8a0e5537af149335b40e67cd59b8c994fbf191990e650402563",
+      "size_bytes": 41356,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/RunRacePredictions_20260727_20261104_66933293.json",
+      "sha256": "28c00e1f6377389074fd615946a910c84c3669ac8cb395bcea75e99139c10461",
+      "size_bytes": 3724,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20190306_20190614_66933293.json",
+      "sha256": "1af0dfada5c37b5f9be8b031372491d06d0979f7aefc18fa42375f4dfa171b79",
+      "size_bytes": 14892,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20190614_20190922_66933293.json",
+      "sha256": "508772b684f4400d889bd32634c8a846d6a38218b74c26c86ba13071d911590e",
+      "size_bytes": 15190,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20190922_20191231_66933293.json",
+      "sha256": "f8bd9993b4c9c4569390af2318b7f8127035e86884f24535ff0d9017af550230",
+      "size_bytes": 6921,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20191231_20200409_66933293.json",
+      "sha256": "49195f8d484c433b17ac5ddd930a04543862561f5c492cee655f29bb30847403",
+      "size_bytes": 36326,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20200409_20200718_66933293.json",
+      "sha256": "26d2d8a3a9ee44e2d593114d6c8d00f34536bd0143b87f3b4e91b482a67c9086",
+      "size_bytes": 33891,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20200718_20201026_66933293.json",
+      "sha256": "8b768a8296fde623a57fb18a317974548102d3806e9dc4244afd66188fd0f530",
+      "size_bytes": 19904,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20201026_20210203_66933293.json",
+      "sha256": "d31c02298370ad43b9b33c1a749b88adf8b0de6152e2a31956354b2a54138c16",
+      "size_bytes": 11405,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20210203_20210514_66933293.json",
+      "sha256": "b0d37bbb3d67bf38d43f6360c46669f39d3a196ec19d19e813f02e11eabb79fb",
+      "size_bytes": 20319,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20210514_20210822_66933293.json",
+      "sha256": "07efae8f58e1e8dcd5e8b49c893149de913a39cda75f638fd71b078d225fdb1a",
+      "size_bytes": 23510,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20210822_20211130_66933293.json",
+      "sha256": "f11591a79ffae6422fe9ca3eff22dfc9583d0a4eca12dc03014e1e3fcff48abc",
+      "size_bytes": 35085,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20211130_20220310_66933293.json",
+      "sha256": "b955e84bb12153eb0966e2031378aa0156edb444573475fc6c09c0b706ff9620",
+      "size_bytes": 15613,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20220310_20220618_66933293.json",
+      "sha256": "47c69dedb785dbc33f905d91d9a5c7332d9ef0f45f3040746e6b5d14d53d8ad7",
+      "size_bytes": 38563,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20220618_20220926_66933293.json",
+      "sha256": "ee053c13f4ec2b4aa10d56a6bf88a6275f1e1bf240c4a44fe2158e90742b0e42",
+      "size_bytes": 72743,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20220926_20230104_66933293.json",
+      "sha256": "2c7d4175dcbab893644db28ef522cd7068e0852c80ee70320f6dfc5d1a474520",
+      "size_bytes": 78928,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20230104_20230414_66933293.json",
+      "sha256": "f7216eaa741d08fa91894a9f7c39ef73035c46fc69343bc7a018b6470d7cce63",
+      "size_bytes": 61179,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20230414_20230723_66933293.json",
+      "sha256": "18e58879bd7e9f837c84a5197037fc364d7cffd8da335f29cd4e52c9b3c50bf7",
+      "size_bytes": 111707,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20230723_20231031_66933293.json",
+      "sha256": "8999da369f44df41951058d8dbb2c071ed2424695c7f03a9e1ca12fc9a6f64b2",
+      "size_bytes": 55663,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20231031_20240208_66933293.json",
+      "sha256": "c99f3bf274008c38797d2b6be8d43bb5604403dad68681f1b3ef49b8c073aa94",
+      "size_bytes": 73520,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20240208_20240518_66933293.json",
+      "sha256": "aa15621cb7415e66eacde0f06de1e74127fb486e79498eb3fed381b19c366916",
+      "size_bytes": 92327,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20240518_20240826_66933293.json",
+      "sha256": "0e5a5b1095db22811e08a707ddd9e38c47244e321eff018886e2a5dd0d3e3cb3",
+      "size_bytes": 72078,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20240826_20241204_66933293.json",
+      "sha256": "d61f607df3e1636d13b54c50d5928fc571f388c417dfa2e707e717dc2c0c05c6",
+      "size_bytes": 25081,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20241204_20250314_66933293.json",
+      "sha256": "cff46645da80221debe9b44e30822a8ae68c1bf9b75519b190082aa150d2d7a6",
+      "size_bytes": 31706,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20250314_20250622_66933293.json",
+      "sha256": "d64b10b3c5d7318e1c4920bb524ee3e7c1249b4eba5c5eb99285f3385d77049e",
+      "size_bytes": 23523,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20250622_20250930_66933293.json",
+      "sha256": "3cebb5777660ea96ef486f6f50e20f2f7f66e9ac6322b83eb869ce21e6c3bb8a",
+      "size_bytes": 46143,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20250930_20260108_66933293.json",
+      "sha256": "4853053575e03f4364ab0d961299cc21fc7a2c76f136a7179185cfa9e5ece24e",
+      "size_bytes": 42634,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20260108_20260418_66933293.json",
+      "sha256": "b0b4f080c13978602f458ecf95959965c6f179c3bf1a7089ff17907374c9f2a8",
+      "size_bytes": 25871,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20260418_20260727_66933293.json",
+      "sha256": "a46225ae1c6b9eed57e280c89e7a6b2cc80ba69b6240deef4c1860d437ac803a",
+      "size_bytes": 24193,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/TrainingHistory_20260727_20261104_66933293.json",
+      "sha256": "5c43a28b0dcb0fc3de7380d7723f89229bd2c1dea7018df7b2ec864e42eb7119",
+      "size_bytes": 2185,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Metrics/kristoffer.toivanen@gmail.com_LhaBackup_Part1.zip",
+      "sha256": "b5462110c9cb6b0193f1c7eea0bb2368dbc9bfbbdeb3f2bcf14e5ca7d9763c3b",
+      "size_bytes": 5246,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Routing/kristoffer.toivanen@gmail.com_courses_1785842175836.json",
+      "sha256": "e251191cc042cb5f43d05d5809e08b8138d679f340e0609de9211c769e0f540f",
+      "size_bytes": 814828,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Routing/kristoffer.toivanen@gmail.com_pacebands_1785842175765.json",
+      "sha256": "95a7ed59fcd7e3e276e8ee35a3d972d76b9133dcd82e8ec1021a5b916feb6ccc",
+      "size_bytes": 14649,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Social/kristoffer.toivanen@gmail.com-likes.json",
+      "sha256": "d6df60f3725de5492c35e32aa0b00fbd8733d92322168a07d655d3d76bfb9adf",
+      "size_bytes": 145,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Uploaded-Files/UploadedFiles_0-_Part1.zip",
+      "sha256": null,
+      "size_bytes": 61401205,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Uploaded-Files/UploadedFiles_0-_Part2.zip",
+      "sha256": null,
+      "size_bytes": 53991167,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Uploaded-Files/UploadedFiles_0-_Part3.zip",
+      "sha256": null,
+      "size_bytes": 37140188,
+      "suffix": ".zip"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/UserGoal_2018-01-24_2018-05-04.json",
+      "sha256": "ca9405f0eb20d95ee0b2da5e1b40c868638892d86d7fbb1ada457e76ea4d0bb7",
+      "size_bytes": 472,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/UserGoal_2019-02-28_2019-06-08.json",
+      "sha256": "3f4818c47e005f338d76f971017209253d9f97e8daf1bb3c699941ed543eb57f",
+      "size_bytes": 195,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/kristoffer.toivanen@gmail.com-profile-image-large.png",
+      "sha256": "e522d648ca255a45a92cb9e131fb4c2883de47d25bc99d2b884881161b96198a",
+      "size_bytes": 8165,
+      "suffix": ".png"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/kristoffer.toivanen@gmail.com-profile-image-medium.png",
+      "sha256": "2d0ebfe9169d1e3d51ce18e0d5b38c7a29f69e032ba173e0538d0f4616c03f48",
+      "size_bytes": 6551,
+      "suffix": ".png"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/kristoffer.toivanen@gmail.com-profile-image-small.png",
+      "sha256": "406f6bc71497b09bbf22c0eafe761b15ba7ca5521e1402c146db32d6515fa37e",
+      "size_bytes": 3005,
+      "suffix": ".png"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/kristoffer.toivanen@gmail.com-social-profile.json",
+      "sha256": "851c7f0dbef0046f2a14a0f02af38e89aee6c2050e1726a815d3fce12e4e2d55",
+      "size_bytes": 1736,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/user_contact.json",
+      "sha256": "2a61a8d2720690714081a0f573e1e1daa6088eb6aaaf5a4f107a1a2a70f85c35",
+      "size_bytes": 130,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/user_profile.json",
+      "sha256": "cd043405fc4d5f2bf2d0ac4fb363c69fc9add8a562c2fd91fe79bc0c876a2f4f",
+      "size_bytes": 179,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/user_profile_suica.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size_bytes": 2,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/user_reminders.json",
+      "sha256": "5f224e29781efeaa509b98d999f4e14c6442ef9b90fe61598cefc97d771944c2",
+      "size_bytes": 1031,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-User/user_settings.json",
+      "sha256": "da080a6e8b4bfa13472d0875b60a6e78090b0fa47d9223314a489d585274b187",
+      "size_bytes": 430,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2017-10-31_2018-02-08_66933293_sleepData.json",
+      "sha256": "e315d935dbd282b4de6caa98aaa5cb10860e0bd16e8168ad31fa1d423f433b54",
+      "size_bytes": 4252,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2018-02-08_2018-05-19_66933293_sleepData.json",
+      "sha256": "5d7442b33274a0ff89e70af66e6e90dc2b4a546f0fb9ac748e34935972b0c56e",
+      "size_bytes": 16999,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2018-05-19_2018-08-27_66933293_sleepData.json",
+      "sha256": "5c531ef4378d8a14b95e64004cdb1265822053ef1987a4cc73da7db984b45561",
+      "size_bytes": 21435,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2018-08-27_2018-12-05_66933293_sleepData.json",
+      "sha256": "02a8eaa875fbbc76b192b35f443d5e328384ef448728dfeb67cea943cb09e373",
+      "size_bytes": 13869,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2018-12-05_2019-03-15_66933293_sleepData.json",
+      "sha256": "3c606d7efcc3542f2207787e17f0e0d1d5b8de834717d5df91d66b65c372aaf4",
+      "size_bytes": 19488,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2019-03-15_2019-06-23_66933293_sleepData.json",
+      "sha256": "144b2272a4abe5b8c46e578ed2985d07e390fd4136099ecd599678b611e7bb4d",
+      "size_bytes": 30940,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2019-06-23_2019-10-01_66933293_sleepData.json",
+      "sha256": "c05c8c386424411bf3de12e870176ac180a4611b12ec72f4cb35925630f2bf3e",
+      "size_bytes": 30587,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2019-10-01_2020-01-09_66933293_sleepData.json",
+      "sha256": "236b8974e7130bb0484d78412c35339c1a68d7a4118cfc5fcd8022b0aca57fbd",
+      "size_bytes": 30531,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-01-09_2020-04-18_66933293_sleepData.json",
+      "sha256": "ab131b41e942b52c0d0621a300ef51bd2018888770a8665998a12e80c172030f",
+      "size_bytes": 31560,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-03-19_2020-06-27_66933293_AbnormalHrEvents.json",
+      "sha256": "12a04e64341de238d8855bbfac187b2b56768c2ab7b384d56331e42167f3cd4e",
+      "size_bytes": 301,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-04-18_2020-07-27_66933293_sleepData.json",
+      "sha256": "4725483c2ef5dff64edd483fce3df2f059ccb2e36a635de9625f2bebe7323286",
+      "size_bytes": 30730,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-06-27_2020-10-05_66933293_AbnormalHrEvents.json",
+      "sha256": "451e21a383a62bc8c953a8bb316ac3e5cdce0057f22539db72e0e7223b83b0b2",
+      "size_bytes": 151,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-07-27_2020-11-04_66933293_sleepData.json",
+      "sha256": "6c2b20e61a85b641616828fddf65dd0e727813aea1464412bd0edef2bb8fd08a",
+      "size_bytes": 30190,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2020-11-04_2021-02-12_66933293_sleepData.json",
+      "sha256": "b34570b0ac180e9f0d91bcc2d87c1c567c01994599d48e1f326fbb03accb70a5",
+      "size_bytes": 28695,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2021-02-12_2021-05-23_66933293_sleepData.json",
+      "sha256": "b9819a5ba0459310b09c4e9aa956a9d6db6076f7201c8ddeabd8aabaebb0828b",
+      "size_bytes": 28652,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2021-05-23_2021-08-31_66933293_sleepData.json",
+      "sha256": "9bd5dc6fe49cbe873fda127b6dc13a1dfd4228ad17a6b46058c4f792b766e6d6",
+      "size_bytes": 26632,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2021-08-31_2021-12-09_66933293_sleepData.json",
+      "sha256": "a68ac8b73b6734ca4b3c809a630c20d43cff7295ed637a2f38de83dac2854b97",
+      "size_bytes": 30391,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2021-12-09_2022-03-19_66933293_sleepData.json",
+      "sha256": "61a67eeb41fa070da14a48cba4836f65b6ef36bac39e49c818a1d2b57d99c6bb",
+      "size_bytes": 35675,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2022-03-19_2022-06-27_66933293_sleepData.json",
+      "sha256": "5936b074ea5f6ad7a14ed7947739ba5ae16f7ab30f40e3a6bd5441fb8f261f1c",
+      "size_bytes": 94263,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2022-06-27_2022-10-05_66933293_sleepData.json",
+      "sha256": "9c7cfda9032c96c283720e4351f4540ae74ec377ef7aa1bcc390e30682da71a2",
+      "size_bytes": 94578,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2022-10-05_2023-01-13_66933293_sleepData.json",
+      "sha256": "2e00ea2787f48ab515183e05cff2da960d6b2974110347fb4668ef9aa76f2402",
+      "size_bytes": 98967,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2023-01-13_2023-04-23_66933293_sleepData.json",
+      "sha256": "b1a93a3898d1c017f3470cbe05b9097c9d81d817101896772bc3c3b82ad18a00",
+      "size_bytes": 100186,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2023-04-23_2023-08-01_66933293_sleepData.json",
+      "sha256": "bc0b75b6e63635763e618e471035f7898460399c7f443e436a61b3b1a8b0774c",
+      "size_bytes": 99828,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2023-08-01_2023-11-09_66933293_sleepData.json",
+      "sha256": "709fc1e6878238c550d73526bfbd29072c374638865a0ce1bcc09fe95cd2378c",
+      "size_bytes": 90678,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2023-11-09_2024-02-17_66933293_sleepData.json",
+      "sha256": "9736f27ae90c2f8206cb6c14606daf6c86b7d95cea50be0158217dfa6088c7c4",
+      "size_bytes": 77591,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2024-02-17_2024-05-27_66933293_sleepData.json",
+      "sha256": "c8a5c273db9f417376653aa3528a4a7b22e8eaa05ce1c3efb5c8ad379190c5f9",
+      "size_bytes": 78158,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2024-05-27_2024-09-04_66933293_sleepData.json",
+      "sha256": "b3fa61ff85231fc5378b5224effa8ae40deebfade8f7263237805839aa9b5bee",
+      "size_bytes": 78286,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2024-09-04_2024-12-13_66933293_sleepData.json",
+      "sha256": "27fd783a5cf351f52098e739072412cf3b2ce09d6e9077222c4a2256de837bca",
+      "size_bytes": 77006,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2024-12-13_2025-03-23_66933293_sleepData.json",
+      "sha256": "da5f7780a341b586b125885c9f4df74323576ef4117aea82c7a166d8fc004f4e",
+      "size_bytes": 77956,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2025-03-23_2025-07-01_66933293_sleepData.json",
+      "sha256": "c128f7d7e610835f7c3fbf3b411f0d5cf24a0152a00fa07ceaac881287da668d",
+      "size_bytes": 77787,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2025-07-01_2025-10-09_66933293_sleepData.json",
+      "sha256": "85dcabf3d609796030385293ed1a78342abecca7f66b2364237d88e728f6248e",
+      "size_bytes": 78035,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2025-10-09_2026-01-17_66933293_sleepData.json",
+      "sha256": "f7c279da6624949be20408a296a4eb09aca8c24da56da625d18d4eab1314f30d",
+      "size_bytes": 76840,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2025-12-16_2026-08-04_66933293_nutritionLogs.json",
+      "sha256": "1654dadca08383993eeaebdc9cadb4bd4fb5d651923d27f508346c0c52b9cd1b",
+      "size_bytes": 14849,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2026-01-17_2026-04-27_66933293_sleepData.json",
+      "sha256": "9b2af61a1b6db9b0710a6e5fe694f78b9c1e9358f43eb87c81470537424154b5",
+      "size_bytes": 76991,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/2026-04-27_2026-08-05_66933293_sleepData.json",
+      "sha256": "8ec32abf14cfc2486c552eab4498730d63fcbd668c167867f9452df0aa2702b5",
+      "size_bytes": 78032,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_LifestyleLogging.json",
+      "sha256": "b3fb16442bda145688edf99a4ac7e800b81e7e1eab179e2bfd998ad59227b53d",
+      "size_bytes": 1600,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_bioMetrics_latest.json",
+      "sha256": "8b91f4718ec68de51bc57cb27d27ee3e1fc234620af67a46ee16b9672dff13cd",
+      "size_bytes": 110,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_fitnessAgeData.json",
+      "sha256": "f0754ab13b079f991a21b3b49edd2b3dff6b3f2d607cbc577ac88cf74a8976e1",
+      "size_bytes": 596541,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_heartRateZones.json",
+      "sha256": "5013f265a886fda6cfef1b001bf242b2781c266a466466fc5fc6470b73986227",
+      "size_bytes": 1060,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_powerZones.json",
+      "sha256": "a001d38dea938170d06869418ad5b0d351b0466ef35a203b3097d8b61fbc8bcc",
+      "size_bytes": 379,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_userBioMetricProfileData.json",
+      "sha256": "0126d40b73fb151bdac6612d596ee6d031543ee8af50baeb749d4cf46b82cf93",
+      "size_bytes": 153,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/66933293_userBioMetrics.json",
+      "sha256": "b289e3fc918ddafbc27dd02f79af4a1f197d970f6648b4a369312bc45819c268",
+      "size_bytes": 1083961,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/BloodPressureFile_2023-01-01_2024-01-01.json",
+      "sha256": "585f757530f8d088df42615550bdb52da5027af129d3cfcc8b560f58582ef923",
+      "size_bytes": 483,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-Connect-Wellness/BloodPressureFile_2026-01-01_2026-08-04.json",
+      "sha256": "4ae99211f2af04f5faa053773736a654bcbfa11599556342fbe85bf1e66d68c0",
+      "size_bytes": 8643,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-GOLF/Golf-CLUB.json",
+      "sha256": "58478cb2b9d386c984c8fb4ec9a25738725b2e36d70ba0a6ee4d44c72bdc2914",
+      "size_bytes": 3259,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT/DI-GOLF/Golf-CLUB_TYPES.json",
+      "sha256": "3486c65ca536d76c288f77b46935522514a11fe0396922cac73108a45a095dc0",
+      "size_bytes": 5429,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_CONNECT_IQ/DI-CONNECT_IQ/user.json",
+      "sha256": "5f882ed885f3bc7d42f21a9332210d414987a3a8386e10d059f8e3d7ccdc75c8",
+      "size_bytes": 41,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_LIVETRACK/livetrack-user-settings.json",
+      "sha256": "f96c9a09c41c398575c340cff37097ed671e33b53810aff7993e86a67d7c11c5",
+      "size_bytes": 380,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_TACX/DI-Tacx-SubscriptionsExport/subscriptions-0.json",
+      "sha256": "84ce7d806e40fea75b2690195463f552cefa7b86c1316ed10924201b64b6e84f",
+      "size_bytes": 300,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_TACX/DI-Tacx-User/user-profile.json",
+      "sha256": "e97b5e3876d6d0de09582fa64d0a124ff7d5c09fdf32d8a41b261ab33503d578",
+      "size_bytes": 1548,
+      "suffix": ".json"
+    },
+    {
+      "path": "DI_TACX/DI-Tacx-WorkoutsExport/workouts-0.json",
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "size_bytes": 3,
+      "suffix": ".json"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftAvdbBundleCartItems.csv",
+      "sha256": "cd0696963d998898725f584bbd573f1280ada861721767450636138a636abe50",
+      "size_bytes": 57,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftAvdbCartItems.csv",
+      "sha256": "59457f69f21d6a1808b77f290ccf369da22f3cc8a76e5ae640ba6334257f6b87",
+      "size_bytes": 34,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftAvdbPurchases.csv",
+      "sha256": "b5f79e4147152663a59a96de5982bfade7e74740ca3c7527b2762583f56e6bf5",
+      "size_bytes": 113,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftBatchUpdateIssueDevices.csv",
+      "sha256": "b3d3af80d52dff9e58f200fd3e27a9fc5ef106f657f01017d04a5e555a7dc750",
+      "size_bytes": 75,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftBatchUpdateJeppCharts.csv",
+      "sha256": "393ab336a994749b48afc4af7aa4d37a3b217f5faba4f387bede8776914df9a6",
+      "size_bytes": 30,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/aircraftCustomerAvdbBundles.csv",
+      "sha256": "7c1ffa55ee4b2de7350f130c6f7e9644dcd033d7fa5d7bfae8afddca54085563",
+      "size_bytes": 195,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/airportPrefAirports.csv",
+      "sha256": "fcf3299021b1fe9c19c916eb66f4f13891c96814c0fbca424d6347b2b17f00d0",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/airportPrefFuelProviders.csv",
+      "sha256": "fcf3299021b1fe9c19c916eb66f4f13891c96814c0fbca424d6347b2b17f00d0",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/appErrorReports.csv",
+      "sha256": "602c617bb89b074582b6d1d3e90fc5a2b99e64b49a95c5b5d000a77592112a89",
+      "size_bytes": 115,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/authTokens.csv",
+      "sha256": "3b70633db146b448009ea1ea052bbc1ae9d2f0692e29783f82b0bb9bd27edd0a",
+      "size_bytes": 65,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/avdbBundleCartItems.csv",
+      "sha256": "ffde4cedafe5433a5325676b0c1b414fbb6a7b42d0939a31277fdb5a4c979f58",
+      "size_bytes": 137,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/avdbCartItems.csv",
+      "sha256": "883b313a025d8a42e2cac870540057f51408c28abbcadb20e47a79ac5af4eef8",
+      "size_bytes": 99,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/avdbEntitlements.csv",
+      "sha256": "bdf2537c85531af74289093260613d70a2b6d5d4f0a2b6bdb8815cd5ca7445db",
+      "size_bytes": 102,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/avdbPurchases.csv",
+      "sha256": "166d304501fe2c27c208319b410540536cea88418af7e1d39a745feb7c11fd93",
+      "size_bytes": 209,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/batchUpdateIssueDevices.csv",
+      "sha256": "e865c78c457a77fd19d751c0b5cd8247768139b8249f4f782bfbccdd564551c9",
+      "size_bytes": 127,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/batchUpdateJeppCharts.csv",
+      "sha256": "59cbce2a453fb02eb94d34100dbefc672275098318070c94cd0c58fd081e1877",
+      "size_bytes": 35,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/carts.csv",
+      "sha256": "974f4ecb64048e44bc20b092abc6b62ddd44e441d3305636516906528917fafa",
+      "size_bytes": 190,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/checklistBinders.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/checklistItems.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/checklistLists.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAircraftConnectedCockpitDevices.csv",
+      "sha256": "ecd3f120c2b1e0f6cb2b43f02b16a9c4c3e96344b15d4df571f3525844fe48c4",
+      "size_bytes": 85,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAircraftInfo.csv",
+      "sha256": "370d45255a4281cc7b859e6413c34ac2ca1f2ff7bbce86f5c92640c9160a6fa9",
+      "size_bytes": 61,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAvdbBundles.csv",
+      "sha256": "5cdd943e7c4ac6a385206c5d564fe8bbfb7b199d749cfb28a05bb2c99b4114d7",
+      "size_bytes": 255,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAvdbDownloads.csv",
+      "sha256": "c000b178a2ccb0bd56c0cc773801e8c3343c74df2a06201094eb5b004d30e939",
+      "size_bytes": 50,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAvdbLatestDownloads.csv",
+      "sha256": "480a5373ea278812395058bbf1e8d4c0a6195548f23139d88ac512623666c161",
+      "size_bytes": 75,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerAvdbs.csv",
+      "sha256": "5b14c8fad6766f6923c1fd822f1d1a7bd5990d1f5b232e6c37d6df29e8f1c7bb",
+      "size_bytes": 34,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerDevices.csv",
+      "sha256": "38ebab6276183b951f53d4e543fd9e4c0d92fa64eb7043783f6dbd14830b90f3",
+      "size_bytes": 237,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/customerPrivateAvdbs.csv",
+      "sha256": "79e51498cee45f368c06013d7ca34d674daccc47396cf9ee1d90cdbc383f5ae8",
+      "size_bytes": 45,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/enablementCartItems.csv",
+      "sha256": "ea176f01d98ca69fd29b0c3982f47f1d9dbd39cf37b94f7167081bed7b41a502",
+      "size_bytes": 39,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/fleetUsers.csv",
+      "sha256": "06d4b3824325e8a7cbba1f4c7b59c339d0ff52b22d397530062427691ce546e2",
+      "size_bytes": 214,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/flightDataLogs.csv",
+      "sha256": "7f2d81ac07428ad9dbd7d526a561c44709c69c3e18aa27c754a507078afbc3a3",
+      "size_bytes": 223,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/garminPilotCartItems.csv",
+      "sha256": "1f4f883809c27087dd9ea63ef10db773311a0bf133eb88b182acd7a8d1fe6d18",
+      "size_bytes": 116,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/logbookBackup.json",
+      "sha256": "ab7ec7ad00a14a9056100bb31498d5427acf10380143a8697911011e911fbc48",
+      "size_bytes": 6734,
+      "suffix": ".json"
+    },
+    {
+      "path": "FLY_GARMIN/logbookClientErrors.csv",
+      "sha256": "8e96c2b9151983f556dc67571cb6bc317e5ef5592e9be9f3b730458912243064",
+      "size_bytes": 57,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/perfProfiles.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/perfTables.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/pilotLogPhotos.csv",
+      "sha256": "c26642d979246cbe2b2c546ddf5bd497365055f05647125a3c25ff54234b3407",
+      "size_bytes": 73,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/pilotTracks.csv",
+      "sha256": "7537da8611c546bd18ea622f04880f38389fcaf1a50f998bdbca60e6bb9e7b34",
+      "size_bytes": 92,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/thirdPartyDataSharingCustomerAircraft.csv",
+      "sha256": "3fd96a8d32519137e7033c1d688d5ad991765d73ce68ae4ba6f037908cf75b14",
+      "size_bytes": 92,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/userJsonSchemaVersions.csv",
+      "sha256": "7aa630acc862077c1b622aefd48766f90567327e92c29ffea20ce5b90a89762a",
+      "size_bytes": 152,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/userLogs.csv",
+      "sha256": "7fcdb19258236f821b638a413be59c9f055fb8e50b33b04d5a33d94cbfe54f02",
+      "size_bytes": 98,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/weightBalanceFavorites.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/weightBalanceProfiles.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "FLY_GARMIN/weightBalanceScenarios.csv",
+      "sha256": "9c3894190842d66ca3d8188fdec44127971267ff0d708987b2e31b8bc3dfc409",
+      "size_bytes": 154,
+      "suffix": ".csv"
+    },
+    {
+      "path": "IT_CONSENT_HISTORY/consentHistory.json",
+      "sha256": "acf592b7077fb126a4a97611a8412e0b5e60cc3455f64f30ce61d7fe7fc2617d",
+      "size_bytes": 1870,
+      "suffix": ".json"
+    },
+    {
+      "path": "IT_DEVICE_AND_CONTENT/devicesandcontent.json",
+      "sha256": "9d7687996bd4d3f7f74b5d7b3cd3579272cc0be3256e1195c378e866734cb725",
+      "size_bytes": 699,
+      "suffix": ".json"
+    },
+    {
+      "path": "IT_GLOBAL_EVENT/events.json",
+      "sha256": "437025c903e825f7f7ffe95903f253a35cccc436239b629151c4fb938cd658c8",
+      "size_bytes": 733999,
+      "suffix": ".json"
+    },
+    {
+      "path": "IT_ORDERS/orders.json",
+      "sha256": "0dc192b31bd39f75214c67be7b04038dc47e967e014ad0cb15aabbc1ca290a74",
+      "size_bytes": 1900,
+      "suffix": ".json"
+    },
+    {
+      "path": "customer_data/customer.json",
+      "sha256": "c7d018b650d74f176c88f4f2321c7c878ceed86c7423cda7ed8764a7c9adc21d",
+      "size_bytes": 2141,
+      "suffix": ".json"
+    }
+  ],
+  "file_count": 314,
+  "source_type": "zip",
+  "suffix_counts": {
+    ".csv": 43,
+    ".json": 262,
+    ".png": 3,
+    ".zip": 6
+  },
+  "total_bytes": 180653308
+}

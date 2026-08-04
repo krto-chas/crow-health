@@ -1,0 +1,3192 @@
+[
+  {
+    "directory": "AVC_CORE_DATA_CUSTOMER_DOMAIN",
+    "family": "coreDataCustomerInfo.json",
+    "file_count": 1,
+    "observed_keys": [
+      "customer",
+      "customerFreeformSettings",
+      "customerLogins",
+      "customerOptionValueSettings",
+      "garminPilotDeviceRegistrations",
+      "jeppesenInfo",
+      "publicKeys"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-ATP",
+    "family": "Garmin_Coach_Pause_History.json",
+    "file_count": 1,
+    "observed_keys": [
+      "pauseEndDate",
+      "pauseReason",
+      "pauseStartDate"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Aggregator",
+    "family": "HydrationLogFile_<date-range>.json",
+    "file_count": 25,
+    "observed_keys": [
+      "activityId",
+      "calendarDate",
+      "capped",
+      "duration",
+      "estimatedSweatLossInML",
+      "hydrationSource",
+      "measuredSweatLossInML",
+      "persistedTimestampGMT",
+      "timestampLocal",
+      "userProfilePK",
+      "uuid",
+      "valueInML"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Aggregator",
+    "family": "UDSFile_<date-range>.json",
+    "file_count": 32,
+    "observed_keys": [
+      "activeKilocalories",
+      "activeSeconds",
+      "allDayStress",
+      "averageMonitoringEnvironmentAltitude",
+      "averageSpo2Value",
+      "bmrKilocalories",
+      "bodyBattery",
+      "burnedKilocalories",
+      "calendarDate",
+      "consumedKilocalories",
+      "currentDayRestingHeartRate",
+      "dailyStepGoal",
+      "dailyTotalFromEpochData",
+      "durationInMilliseconds",
+      "floorsAscendedInMeters",
+      "floorsDescendedInMeters",
+      "highlyActiveSeconds",
+      "hydration",
+      "includesActivityData",
+      "includesAllDayPulseOx",
+      "includesCalorieConsumedData",
+      "includesContinuousMeasurement",
+      "includesSingleMeasurement",
+      "includesSleepPulseOx",
+      "includesWellnessData",
+      "isVigorousDay",
+      "latestSpo2Value",
+      "latestSpo2ValueReadingTimeGmt",
+      "latestSpo2ValueReadingTimeLocal",
+      "lowestSpo2Value",
+      "maxAvgHeartRate",
+      "maxHeartRate",
+      "minAvgHeartRate",
+      "minHeartRate",
+      "moderateIntensityMinutes",
+      "netCalorieGoal",
+      "remainingKilocalories",
+      "respiration",
+      "restingCaloriesFromActivity",
+      "restingHeartRate",
+      "restingHeartRateTimestamp",
+      "source",
+      "totalDistanceMeters",
+      "totalKilocalories",
+      "totalSteps",
+      "userFloorsAscendedGoal",
+      "userIntensityMinutesGoal",
+      "userProfilePK",
+      "uuid",
+      "version",
+      "vigorousIntensityMinutes",
+      "wellnessActiveKilocalories",
+      "wellnessDistanceMeters",
+      "wellnessEndTimeGmt",
+      "wellnessEndTimeLocal",
+      "wellnessKilocalories",
+      "wellnessStartTimeGmt",
+      "wellnessStartTimeLocal",
+      "wellnessTotalKilocalories"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Device",
+    "family": "66933293_DeviceBackups.json",
+    "file_count": 1,
+    "observed_keys": [
+      "createDate",
+      "deviceBackupId",
+      "deviceId",
+      "pendingRestore",
+      "primaryUUID",
+      "userId"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Fitness",
+    "family": "kristoffer.toivanen@gmail.com_0_summarizedActivities.json",
+    "file_count": 1,
+    "observed_keys": [
+      "summarizedActivitiesExport"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Fitness",
+    "family": "kristoffer.toivanen@gmail.com_gear.json",
+    "file_count": 1,
+    "observed_keys": [
+      "gearActivityDTOs",
+      "gearActivityTypeDTOS",
+      "gearDTOS"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Fitness",
+    "family": "kristoffer.toivanen@gmail.com_personalRecord.json",
+    "file_count": 1,
+    "observed_keys": [
+      "personalRecords"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Fitness",
+    "family": "kristoffer.toivanen@gmail.com_trainingPlan.json",
+    "file_count": 1,
+    "observed_keys": [],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Fitness",
+    "family": "kristoffer.toivanen@gmail.com_workout.json",
+    "file_count": 1,
+    "observed_keys": [
+      "workoutList",
+      "workoutScheduleList"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20180510_20180818_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "ActivityVo2Max_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityId",
+      "activityUuid",
+      "calendarDate",
+      "deviceId",
+      "sport",
+      "subSport",
+      "timestampGmt",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20220618_20220926_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20220926_20230104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20230104_20230414_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20241204_20250314_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20250314_20250622_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20260108_20260418_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20260418_20260727_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsAcuteTrainingLoad_20260727_20261104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acwrPercent",
+      "acwrStatus",
+      "acwrStatusFeedback",
+      "calendarDate",
+      "dailyAcuteChronicWorkloadRatio",
+      "dailyTrainingLoadAcute",
+      "dailyTrainingLoadChronic",
+      "deviceId",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20190922_20191231_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20191231_20200409_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20200409_20200718_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20200718_20201026_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20201026_20210203_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20210203_20210514_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20210514_20210822_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20210822_20211130_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20211130_20220310_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20220310_20220618_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20220618_20220926_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "heatTrend",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20220926_20230104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20230104_20230414_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "altitudeTrend",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20241204_20250314_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "altitudeTrend",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20250314_20250622_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "altitudeTrend",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20260108_20260418_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20260418_20260727_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "altitudeTrend",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsHeatAltitudeAcclimation_20260727_20261104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "acclimationPercentage",
+      "altitudeAcclimation",
+      "altitudeAcclimationLocalTimestamp",
+      "altitudeAcclimationTimestamp",
+      "calendarDate",
+      "currentAltitude",
+      "deviceId",
+      "heatAcclimationPercentage",
+      "heatAcclimationTimestamp",
+      "prevAcclimationPercentage",
+      "prevAltitude",
+      "previousAltitudeAcclimation",
+      "previousAltitudeAcclimationTimestamp",
+      "previousHeatAcclimationPercentage",
+      "previousHeatAcclimationTimestamp",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20180130_20180510_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20180510_20180818_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20180818_20181126_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20181126_20190306_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20190306_20190614_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20190614_20190922_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20190922_20191231_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20191231_20200409_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20200409_20200718_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20200718_20201026_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20201026_20210203_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20210203_20210514_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20210514_20210822_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20210822_20211130_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "analyzerMethod",
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "fitnessAgeDescription",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20211130_20220310_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20220310_20220618_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20220618_20220926_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20220926_20230104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20230104_20230414_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "fitnessAge",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20241204_20250314_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20250314_20250622_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20260108_20260418_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20260418_20260727_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "MetricsMaxMetData_20260727_20261104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "calibratedData",
+      "deviceId",
+      "maxMet",
+      "maxMetCategory",
+      "sport",
+      "subSport",
+      "updateTimestamp",
+      "userProfilePK",
+      "vo2MaxValue"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20211130_20220310_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20220310_20220618_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20220618_20220926_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20220926_20230104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20230104_20230414_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20241204_20250314_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20250314_20250622_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20260108_20260418_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20260418_20260727_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "RunRacePredictions_20260727_20261104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "raceTime10K",
+      "raceTime5K",
+      "raceTimeHalf",
+      "raceTimeMarathon",
+      "timestamp",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20190306_20190614_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20190614_20190922_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20190922_20191231_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20191231_20200409_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20200409_20200718_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20200718_20201026_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20201026_20210203_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20210203_20210514_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20210514_20210822_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20210822_20211130_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20211130_20220310_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20220310_20220618_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20220618_20220926_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20220926_20230104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20230104_20230414_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20230414_20230723_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20230723_20231031_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20231031_20240208_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20240208_20240518_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20240518_20240826_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20240826_20241204_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "sport",
+      "subSport",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20241204_20250314_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20250314_20250622_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20250622_20250930_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20250930_20260108_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "loadLevelTrend",
+      "loadTunnelMax",
+      "loadTunnelMin",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "trainingStatusFeedbackPhrase",
+      "userProfilePK",
+      "weeklyTrainingLoadSum"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20260108_20260418_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20260418_20260727_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Metrics",
+    "family": "TrainingHistory_20260727_20261104_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "deviceId",
+      "fitnessLevelTrend",
+      "timestamp",
+      "trainingStatus",
+      "trainingStatus2FeedbackPhrase",
+      "userProfilePK"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Routing",
+    "family": "kristoffer.toivanen@gmail.com_courses_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "accessControl",
+      "courseName",
+      "courseType",
+      "createDate",
+      "elapsedSeconds",
+      "elevationGainMeter",
+      "elevationLossMeter",
+      "geoPoints",
+      "hasTurnDetectionDisabled",
+      "speedMeterPerSecond",
+      "startPoint",
+      "updateDate"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Routing",
+    "family": "kristoffer.toivanen@gmail.com_pacebands_<id>.json",
+    "file_count": 1,
+    "observed_keys": [
+      "paceBandSplits",
+      "paceBandSummary"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Social",
+    "family": "kristoffer.toivanen@gmail.com-likes.json",
+    "file_count": 1,
+    "observed_keys": [],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "UserGoal_<date-range>.json",
+    "file_count": 2,
+    "observed_keys": [
+      "createDate",
+      "goalValue",
+      "startDate",
+      "updateDate",
+      "userGoalCategory",
+      "userGoalType",
+      "userProfilePk"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "kristoffer.toivanen@gmail.com-social-profile.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityHeartRateVisibility",
+      "activityMapVisibility",
+      "activityPowerVisibility",
+      "activityStartVisibility",
+      "allowGolfLiveScoring",
+      "allowGolfScoringByConnections",
+      "badgeVisibility",
+      "courseVisibility",
+      "cyclingMaxAvgPower",
+      "cyclingTrainingSpeed",
+      "displayName",
+      "favoriteActivityTypes",
+      "favoriteCyclingActivityTypes",
+      "fullName",
+      "id",
+      "levelIsViewed",
+      "levelUpdateDate",
+      "levelUpdateDateGMT",
+      "location",
+      "makeGolfScorecardsPrivate",
+      "nameApproved",
+      "profileId",
+      "profileImageUrlLarge",
+      "profileImageUrlMedium",
+      "profileImageUrlSmall",
+      "profileVisibility",
+      "runningTrainingSpeed",
+      "showActivityClass",
+      "showAge",
+      "showAgeRange",
+      "showBadges",
+      "showGender",
+      "showHeight",
+      "showLast12Months",
+      "showLifetimeTotals",
+      "showPersonalRecords",
+      "showRecentDevice",
+      "showRecentFavorites",
+      "showRecentGear",
+      "showUpcomingEvents",
+      "showVO2Max",
+      "showWeight",
+      "showWeightClass",
+      "swimmingTrainingSpeed",
+      "userLevel",
+      "userName",
+      "userPoint",
+      "userPro"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "user_contact.json",
+    "file_count": 1,
+    "observed_keys": [
+      "emails",
+      "firstName",
+      "lastName",
+      "phones"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "user_profile.json",
+    "file_count": 1,
+    "observed_keys": [
+      "birthDate",
+      "emailAddress",
+      "firstName",
+      "gender",
+      "lastName",
+      "userName"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "user_profile_suica.json",
+    "file_count": 1,
+    "observed_keys": [],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "user_reminders.json",
+    "file_count": 1,
+    "observed_keys": [
+      "createTimestamp",
+      "enabled",
+      "occurrence",
+      "reminderDays",
+      "reminderText",
+      "reminderTimes",
+      "reminderType",
+      "updateTimestamp"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-User",
+    "family": "user_settings.json",
+    "file_count": 1,
+    "observed_keys": [
+      "adaptiveCoachingPlanUserSettingDTO",
+      "handedness",
+      "preferredLocale",
+      "stepLengths",
+      "useFixedLocation"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_LifestyleLogging.json",
+    "file_count": 1,
+    "observed_keys": [
+      "dailyLogList",
+      "trackedBehaviourList"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_bioMetrics_latest.json",
+    "file_count": 1,
+    "observed_keys": [
+      "functionalThresholdPower",
+      "lactateThresholdHeartRate",
+      "lactateThresholdSpeed"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_fitnessAgeData.json",
+    "file_count": 1,
+    "observed_keys": [
+      "asOfDateGmt",
+      "biometricVo2Max",
+      "bmi",
+      "chronologicalAge",
+      "createTimestamp",
+      "currentBioAge",
+      "healthyActiveBioAge",
+      "healthyAllBioAge",
+      "healthyBmi",
+      "healthyBmiFatBioAge",
+      "healthyFat",
+      "numOfWeeksForIM",
+      "rhr",
+      "rhrLastEntryDate",
+      "totalVigorousDays",
+      "totalVigorousIMs",
+      "vo2MaxForHealthyActive",
+      "vo2MaxForHealthyBmiFat",
+      "weightDataLastEntryDate"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_heartRateZones.json",
+    "file_count": 1,
+    "observed_keys": [
+      "changeState",
+      "lactateThresholdHeartRateUsed",
+      "maxHeartRateUsed",
+      "restingHeartRateUsed",
+      "restingHrAutoUpdateUsed",
+      "sport",
+      "trainingMethod",
+      "zone1Floor",
+      "zone2Floor",
+      "zone3Floor",
+      "zone4Floor",
+      "zone5Floor"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_powerZones.json",
+    "file_count": 1,
+    "observed_keys": [
+      "functionalThresholdPower",
+      "sport",
+      "zone1Floor",
+      "zone2Floor",
+      "zone3Floor",
+      "zone4Floor",
+      "zone5Floor",
+      "zone6Floor",
+      "zone7Floor"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_userBioMetricProfileData.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityClass",
+      "functionalThresholdPower",
+      "height",
+      "lactateThresholdHeartRate",
+      "vo2Max",
+      "vo2MaxCycling",
+      "weight"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "66933293_userBioMetrics.json",
+    "file_count": 1,
+    "observed_keys": [
+      "activityClass",
+      "height",
+      "metaData",
+      "userSetNullForActivityClass",
+      "userSetNullForHeight",
+      "userSetNullForLactateThresholdHR",
+      "userSetNullForLactateThresholdRowingHR",
+      "userSetNullForLactateThresholdRowingPace",
+      "userSetNullForLactateThresholdSpeed",
+      "userSetNullForVO2MaxCycling",
+      "userSetNullForVO2MaxRunning",
+      "userSetNullForWeight",
+      "version",
+      "weight"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "<date-range>_66933293_AbnormalHrEvents.json",
+    "file_count": 2,
+    "observed_keys": [
+      "abnormalHrEventGMT",
+      "abnormalHrThresholdValue",
+      "abnormalHrValue",
+      "calendarDate",
+      "deviceId"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "<date-range>_66933293_nutritionLogs.json",
+    "file_count": 1,
+    "observed_keys": [
+      "calendarDate",
+      "mfpCalorie"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "<date-range>_66933293_sleepData.json",
+    "file_count": 32,
+    "observed_keys": [
+      "averageRespiration",
+      "avgSleepStress",
+      "awakeCount",
+      "awakeSleepSeconds",
+      "calendarDate",
+      "deepSleepSeconds",
+      "highestRespiration",
+      "lightSleepSeconds",
+      "lowestRespiration",
+      "remSleepSeconds",
+      "restlessMomentCount",
+      "retro",
+      "sleepEndTimestampGMT",
+      "sleepScores",
+      "sleepStartTimestampGMT",
+      "sleepWindowConfirmationType",
+      "spo2SleepSummary",
+      "unmeasurableSeconds"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-Connect-Wellness",
+    "family": "BloodPressureFile_<date-range>.json",
+    "file_count": 2,
+    "observed_keys": [
+      "biometricSourceType",
+      "bloodPressure",
+      "metaData",
+      "version"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "DI_CONNECT/DI-GOLF",
+    "family": "Golf-CLUB.json",
+    "file_count": 1,
+    "observed_keys": [
+      "data",
+      "preparedOn",
+      "type",
+      "version"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT/DI-GOLF",
+    "family": "Golf-CLUB_TYPES.json",
+    "file_count": 1,
+    "observed_keys": [
+      "data",
+      "preparedOn",
+      "type",
+      "version"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_CONNECT_IQ/DI-CONNECT_IQ",
+    "family": "user.json",
+    "file_count": 1,
+    "observed_keys": [
+      "myGarminCustomerId"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_LIVETRACK",
+    "family": "livetrack-user-settings.json",
+    "file_count": 1,
+    "observed_keys": [
+      "deviceSettings",
+      "emailEnabled",
+      "extendLiveTrack",
+      "groupTrackAllConnections",
+      "groupTrackEnabled",
+      "twitterEnabled"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_TACX/DI-Tacx-SubscriptionsExport",
+    "family": "subscriptions-0.json",
+    "file_count": 1,
+    "observed_keys": [
+      "items"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_TACX/DI-Tacx-User",
+    "family": "user-profile.json",
+    "file_count": 1,
+    "observed_keys": [
+      "bikeProfiles",
+      "imageUrl",
+      "registrationDate"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "DI_TACX/DI-Tacx-WorkoutsExport",
+    "family": "workouts-0.json",
+    "file_count": 1,
+    "observed_keys": [],
+    "root_type": "object"
+  },
+  {
+    "directory": "FLY_GARMIN",
+    "family": "logbookBackup.json",
+    "file_count": 1,
+    "observed_keys": [
+      "aircraftTypes",
+      "currencyItems",
+      "endorsements",
+      "endorsementsGiven",
+      "entries",
+      "exceedances",
+      "settings",
+      "version"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "IT_CONSENT_HISTORY",
+    "family": "consentHistory.json",
+    "file_count": 1,
+    "observed_keys": [
+      "actorId",
+      "consentCreatedDate",
+      "consentExpiryDate",
+      "consentTypeId",
+      "consentUpdatedBy",
+      "correlationId",
+      "createdDate",
+      "key",
+      "locale",
+      "metadata",
+      "referenceId",
+      "referenceType",
+      "source",
+      "state",
+      "version"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "IT_DEVICE_AND_CONTENT",
+    "family": "devicesandcontent.json",
+    "file_count": 1,
+    "observed_keys": [
+      "deviceAndContentInfo"
+    ],
+    "root_type": "object"
+  },
+  {
+    "directory": "IT_GLOBAL_EVENT",
+    "family": "events.json",
+    "file_count": 1,
+    "observed_keys": [
+      "actorId",
+      "eventData",
+      "eventDateTime",
+      "eventType",
+      "locale",
+      "locationCountry",
+      "platformId",
+      "receivedDate",
+      "referenceId",
+      "referenceType",
+      "sourceSystem",
+      "sourceSystemVersion",
+      "testMode",
+      "userAgent"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "IT_ORDERS",
+    "family": "orders.json",
+    "file_count": 1,
+    "observed_keys": [
+      "billingAddress",
+      "customerPONumber",
+      "emailAddress",
+      "lines",
+      "orderDate",
+      "orderNumber",
+      "orderStatus",
+      "orderTotal",
+      "orderType",
+      "promotions",
+      "shippingAddress"
+    ],
+    "root_type": "array"
+  },
+  {
+    "directory": "customer_data",
+    "family": "customer.json",
+    "file_count": 1,
+    "observed_keys": [
+      "accountVerificationDate",
+      "accountVerified",
+      "active",
+      "addresses",
+      "companyName",
+      "createdDate",
+      "customerLocation",
+      "dateOfBirth",
+      "displayName",
+      "emailAddresses",
+      "firstName",
+      "foreignIdentifiers",
+      "fullName",
+      "gender",
+      "id",
+      "lastName",
+      "lastUpdateDateTime",
+      "locale",
+      "loginIdentifiers",
+      "loginInfo",
+      "managedStatus",
+      "middleName",
+      "namePrefix",
+      "nameSuffix",
+      "nextPurgeCheckDate",
+      "phoneNumbers",
+      "primaryAddress",
+      "primaryEmailAddress",
+      "primaryPhoneNumber",
+      "toBePurged",
+      "type",
+      "username",
+      "version"
+    ],
+    "root_type": "object"
+  }
+]
