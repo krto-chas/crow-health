@@ -23,6 +23,11 @@ class RuntimeIdentity:
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
+def _optional_path(value: str | None) -> Path | None:
+    """Convert an optional string into an optional Path."""
+    if value:
+        return Path(value)
+    return None
 
 def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
     root = _git_root(cwd)
