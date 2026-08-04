@@ -23,11 +23,11 @@ class RuntimeIdentity:
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
+
 def _optional_path(value: str | None) -> Path | None:
-    """Convert an optional string into an optional Path."""
-    if value:
-        return Path(value)
-    return None
+    """Convert an optional string into an optional path."""
+    return Path(value) if value else None
+
 
 def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
     root = _git_root(cwd)
@@ -58,12 +58,12 @@ def _package_version() -> str:
 
 
 def _git_root(cwd: Path | None) -> Path | None:
-    return _optional_path(
-        _git_value(("rev-parse", "--show-toplevel"), cwd=cwd)
-    )
+    return _optional_path(_git_value(("rev-parse", "--show-toplevel"), cwd=cwd))
 
 
 def _git_commit(root: Path | None) -> str | None:
+    if root is None:
+        return None
     return _git_value(("rev-parse", "HEAD"), cwd=root)
 
 
@@ -71,7 +71,6 @@ def _git_value(
     arguments: tuple[str, ...],
     *,
     cwd: Path | None,
-    as_path: bool = False,
 ) -> str | None:
     try:
         result = subprocess.run(
@@ -83,8 +82,7 @@ def _git_value(
             timeout=2,
         )
     except (FileNotFoundError, subprocess.SubprocessError):
-        return value or None
-    value = result.stdout.strip()
-    if not value:
         return None
-    return Path(value) if as_path else value
+
+    value = result.stdout.strip()
+    return value or None
