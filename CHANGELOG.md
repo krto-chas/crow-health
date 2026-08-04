@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased — RC0 Pass 4
+## Unreleased — RC0 Pass 5
+
+- Added a reusable import orchestration service between source adapters, parser registry and observation storage.
+- Added exact ZIP JSON-member loading with SHA-256 source identity.
+- Added fail-closed persistence when a parser reports errors.
+- Added structured import reports with parsed, inserted and existing record counts.
+- Added the `import-json-member` CLI command.
+- Added tests for successful import, idempotency, parser failures, missing parsers and deterministic source loading.
+- No batch scheduler, API, analytics or Home Assistant integration has been added.
+
+## RC0 Pass 4
 
 - Added the reusable `ObservationStore` contract.
 - Added an append-only JSON Lines storage adapter for normalized observations.
