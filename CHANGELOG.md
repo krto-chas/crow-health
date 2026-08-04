@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased — RC0 Pass 6
+## Unreleased — RC0 Pass 7
+
+- Added the `crow-health version` runtime identity command.
+- Added installed package, Python, platform, executable and project-root reporting.
+- Added Git commit detection with an explicit deployment override.
+- Added a machine-readable capability list for CLI verification.
+- Added cross-platform tests and ADR-0009.
+- No health-data reading, analytics, API or Home Assistant integration has been added.
+
+## RC0 Pass 6
 
 - Added deterministic discovery of matching JSON members inside ZIP archives.
 - Added reusable batch import orchestration built on the existing single-document pipeline.
