@@ -45,6 +45,8 @@ def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
             "inspect-json",
             "import-json-member",
             "import-json-batch",
+            "index-build",
+            "index-query",
             "version",
         ),
     )
