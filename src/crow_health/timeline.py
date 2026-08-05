@@ -14,6 +14,7 @@ class TimelineQuery:
     day: date | None = None
     source_evidence_id: str | None = None
     parser_name: str | None = None
+    metric: str | None = None
     metric_prefix: str | None = None
 
 
@@ -43,6 +44,7 @@ class ObservationTimeline:
         observed_from, observed_to = _resolved_range(query)
         observations = self._index.query(
             ObservationQuery(
+                metric=query.metric,
                 source_evidence_id=query.source_evidence_id,
                 parser_name=query.parser_name,
                 observed_from=observed_from,

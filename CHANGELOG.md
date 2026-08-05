@@ -1,6 +1,17 @@
 # Changelog
 
-## Unreleased — RC0 Pass 11
+## Unreleased — RC0 Pass 12
+
+- Added neutral descriptive statistics for one exact numeric metric at a time.
+- Added count, minimum, maximum, arithmetic mean and timestamp coverage.
+- Added deterministic UTC daily summaries and covered-day counts.
+- Added explicit exclusion counts for non-numeric and timestamp-free observations.
+- Added mixed-unit rejection instead of combining incompatible values.
+- Added the `statistics` CLI command and runtime capability reporting.
+- Added synthetic tests for numeric summaries, daily grouping, ranges and invalid units.
+- No medical interpretation, trend inference, correlation, dashboard or Home Assistant integration has been added.
+
+## RC0 Pass 11
 
 - Added a read-only observation timeline over the rebuildable index.
 - Added deterministic grouping by observation timestamp, evidence source and parser.
