@@ -47,6 +47,8 @@ def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
             "import-json-batch",
             "index-build",
             "index-query",
+            "validate-store",
+            "garmin-sleep-import",
             "version",
         ),
     )
