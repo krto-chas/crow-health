@@ -143,12 +143,16 @@ def _matches(entry: ObservationIndexEntry, query: ObservationQuery) -> bool:
         return False
     if query.parser_name is not None and entry.parser_name != query.parser_name:
         return False
-    if query.observed_from is not None:
-        if entry.observed_at is None or entry.observed_at < query.observed_from:
-            return False
-    if query.observed_to is not None:
-        if entry.observed_at is None or entry.observed_at > query.observed_to:
-            return False
+    if (
+        query.observed_from is not None
+        and (entry.observed_at is None or entry.observed_at < query.observed_from)
+    ):
+        return False
+    if (
+        query.observed_to is not None
+        and (entry.observed_at is None or entry.observed_at > query.observed_to)
+    ):
+        return False
     return True
 
 
