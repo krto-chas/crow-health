@@ -14,6 +14,7 @@ from crow_health.garmin.schema import inspect_zip_json, write_schema_profile
 from crow_health.importing import BatchImportService, ImportService, load_json_zip_member
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.runtime import runtime_identity
+from crow_health.statistics import DescriptiveStatistics, StatisticsQuery
 from crow_health.storage import JsonlObservationIndex, JsonlObservationStore, ObservationQuery
 from crow_health.timeline import ObservationTimeline, TimelineQuery
 from crow_health.validation import validate_store
@@ -74,6 +75,15 @@ def parser() -> argparse.ArgumentParser:
     timeline_query.add_argument("--parser-name")
     timeline_query.add_argument("--metric-prefix")
 
+    statistics = sub.add_parser("statistics")
+    statistics.add_argument("metric")
+    statistics.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
+    statistics.add_argument("--index", type=Path, default=None)
+    statistics.add_argument("--from", dest="observed_from", type=datetime.fromisoformat)
+    statistics.add_argument("--to", dest="observed_to", type=datetime.fromisoformat)
+    statistics.add_argument("--source-evidence-id")
+    statistics.add_argument("--parser-name")
+
     validate = sub.add_parser("validate-store")
     validate.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
     validate.add_argument("--index", type=Path, default=None)
@@ -101,15 +111,39 @@ def main() -> int:
     elif args.command == "inventory-export":
         inventory = inventory_zip(args.path)
         write_inventory(inventory, args.output)
-        print(json.dumps({"file_count": inventory.file_count, "total_bytes": inventory.total_bytes, "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {
+                    "file_count": inventory.file_count,
+                    "total_bytes": inventory.total_bytes,
+                    "output": str(args.output),
+                },
+                indent=2,
+            )
+        )
     elif args.command == "profile-export":
         families = profile_json_families(args.path)
         write_profile(families, args.output)
-        print(json.dumps({"json_families": len(families), "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {"json_families": len(families), "output": str(args.output)},
+                indent=2,
+            )
+        )
     elif args.command == "inspect-json":
         schema_profile = inspect_zip_json(args.archive, args.member_path)
         write_schema_profile(schema_profile, args.output)
-        print(json.dumps({"source_path": schema_profile.source_path, "record_count": schema_profile.record_count, "field_count": len(schema_profile.fields), "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {
+                    "source_path": schema_profile.source_path,
+                    "record_count": schema_profile.record_count,
+                    "field_count": len(schema_profile.fields),
+                    "output": str(args.output),
+                },
+                indent=2,
+            )
+        )
     elif args.command == "import-json-member":
         member_report = _import_service(args.store).import_document(
             load_json_zip_member(args.archive, args.member_path)
@@ -125,10 +159,23 @@ def main() -> int:
         return 0 if batch_report.succeeded else 1
     elif args.command == "index-build":
         index = JsonlObservationIndex(args.store, args.index)
-        print(json.dumps({"entries": index.rebuild(), "index": str(index.index_path)}, indent=2))
+        print(
+            json.dumps(
+                {"entries": index.rebuild(), "index": str(index.index_path)},
+                indent=2,
+            )
+        )
     elif args.command == "index-query":
         index = JsonlObservationIndex(args.store, args.index)
-        observations = index.query(ObservationQuery(metric=args.metric, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, observed_from=args.observed_from, observed_to=args.observed_to))
+        observations = index.query(
+            ObservationQuery(
+                metric=args.metric,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+            )
+        )
         print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
     elif args.command == "timeline-query":
         timeline_result = ObservationTimeline(
@@ -144,6 +191,19 @@ def main() -> int:
             )
         )
         print(json.dumps(asdict(timeline_result), indent=2, default=str))
+    elif args.command == "statistics":
+        statistics_result = DescriptiveStatistics(
+            ObservationTimeline(JsonlObservationIndex(args.store, args.index))
+        ).summarize(
+            StatisticsQuery(
+                metric=args.metric,
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+            )
+        )
+        print(json.dumps(asdict(statistics_result), indent=2, default=str))
     elif args.command == "validate-store":
         validation_report = validate_store(
             args.store,
