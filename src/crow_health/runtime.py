@@ -50,6 +50,7 @@ def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
             "timeline-query",
             "statistics",
             "catalog",
+            "analytics",
             "validate-store",
             "garmin-sleep-import",
             "version",
