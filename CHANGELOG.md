@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased — RC0 Pass 7
+## Unreleased — RC0 Pass 8
+
+- Added a rebuildable metadata index for append-only JSONL observations.
+- Added byte-offset lookup without changing the authoritative observation store.
+- Added metric, source evidence, parser and observation-time filtering.
+- Added atomic index replacement and stale-index mismatch detection.
+- Added the `index-build` and `index-query` CLI commands.
+- Added tests for rebuilding, filtering, idempotency, empty stores and corruption.
+- No incremental index updater, scheduler, analytics, API or Home Assistant integration has been added.
+
+## RC0 Pass 7
 
 - Added the `crow-health version` runtime identity command.
 - Added installed package, Python, platform, executable and project-root reporting.
