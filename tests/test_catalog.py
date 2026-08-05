@@ -74,7 +74,7 @@ def test_builds_deterministic_metric_inventory(tmp_path: Path) -> None:
     assert score.observation_count == 2
     assert score.covered_days == 2
     assert score.source_evidence_count == 2
-    assert score.value_types == ("number",)
+    assert score.value_types == ("integer",)
     assert score.units == ("score",)
     assert score.statistics_supported is True
 
