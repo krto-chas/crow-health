@@ -7,19 +7,25 @@ from datetime import date, datetime
 from pathlib import Path
 
 from crow_health.analytics import AnalyticsQuery, AnalyticsService
-from crow_health.catalog import CatalogQuery, ObservationCatalog
+from crow_health.analytics.models import (
+    CompletenessResult,
+    MovingAverageResult,
+    OutlierResult,
+    TrendResult,
+)
+from crow_health.catalog import CatalogQuery, ObservationCatalog, ObservationCatalogResult
 from crow_health.evidence.archive import archive_file
-from crow_health.garmin.full_import import run_garmin_sleep_import
+from crow_health.garmin.full_import import GarminSleepImportReport, run_garmin_sleep_import
 from crow_health.garmin.inventory import inventory_zip, write_inventory
 from crow_health.garmin.profile import profile_json_families, write_profile
 from crow_health.garmin.schema import inspect_zip_json, write_schema_profile
 from crow_health.importing import BatchImportService, ImportService, load_json_zip_member
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.runtime import runtime_identity
-from crow_health.statistics import DescriptiveStatistics, StatisticsQuery
+from crow_health.statistics import DescriptiveStatistics, MetricStatistics, StatisticsQuery
 from crow_health.storage import JsonlObservationIndex, JsonlObservationStore, ObservationQuery
-from crow_health.timeline import ObservationTimeline, TimelineQuery
-from crow_health.validation import validate_store
+from crow_health.timeline import ObservationTimeline, TimelineQuery, TimelineResult
+from crow_health.validation import StoreValidationReport, validate_store
 
 
 def parser() -> argparse.ArgumentParser:
@@ -93,7 +99,10 @@ def parser() -> argparse.ArgumentParser:
     catalog.add_argument("--parser-name")
 
     analytics = sub.add_parser("analytics")
-    analytics.add_argument("operation", choices=("moving-average", "trend", "completeness", "outliers"))
+    analytics.add_argument(
+        "operation",
+        choices=("moving-average", "trend", "completeness", "outliers"),
+    )
     analytics.add_argument("metric")
     analytics.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
     analytics.add_argument("--index", type=Path, default=None)
@@ -128,6 +137,17 @@ def _analytics_service(store: Path, index: Path | None) -> AnalyticsService:
 
 def main() -> int:
     args = parser().parse_args()
+    result: (
+        TimelineResult
+        | MetricStatistics
+        | ObservationCatalogResult
+        | MovingAverageResult
+        | TrendResult
+        | CompletenessResult
+        | OutlierResult
+    )
+    report: StoreValidationReport | GarminSleepImportReport
+
     if args.command == "version":
         print(json.dumps(runtime_identity().to_dict(), indent=2))
     elif args.command == "archive-export":
@@ -135,42 +155,117 @@ def main() -> int:
     elif args.command == "inventory-export":
         inventory = inventory_zip(args.path)
         write_inventory(inventory, args.output)
-        print(json.dumps({"file_count": inventory.file_count, "total_bytes": inventory.total_bytes, "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {
+                    "file_count": inventory.file_count,
+                    "total_bytes": inventory.total_bytes,
+                    "output": str(args.output),
+                },
+                indent=2,
+            )
+        )
     elif args.command == "profile-export":
         families = profile_json_families(args.path)
         write_profile(families, args.output)
-        print(json.dumps({"json_families": len(families), "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {"json_families": len(families), "output": str(args.output)},
+                indent=2,
+            )
+        )
     elif args.command == "inspect-json":
         schema_profile = inspect_zip_json(args.archive, args.member_path)
         write_schema_profile(schema_profile, args.output)
-        print(json.dumps({"source_path": schema_profile.source_path, "record_count": schema_profile.record_count, "field_count": len(schema_profile.fields), "output": str(args.output)}, indent=2))
+        print(
+            json.dumps(
+                {
+                    "source_path": schema_profile.source_path,
+                    "record_count": schema_profile.record_count,
+                    "field_count": len(schema_profile.fields),
+                    "output": str(args.output),
+                },
+                indent=2,
+            )
+        )
     elif args.command == "import-json-member":
-        member_report = _import_service(args.store).import_document(load_json_zip_member(args.archive, args.member_path))
+        member_report = _import_service(args.store).import_document(
+            load_json_zip_member(args.archive, args.member_path)
+        )
         print(json.dumps(asdict(member_report), indent=2))
         return 0 if member_report.persisted else 1
     elif args.command == "import-json-batch":
-        batch_report = BatchImportService(_import_service(args.store)).import_zip(args.archive, patterns=tuple(args.pattern or ("*sleepData.json",)))
+        batch_report = BatchImportService(_import_service(args.store)).import_zip(
+            args.archive,
+            patterns=tuple(args.pattern or ("*sleepData.json",)),
+        )
         print(json.dumps(asdict(batch_report), indent=2))
         return 0 if batch_report.succeeded else 1
     elif args.command == "index-build":
         index = JsonlObservationIndex(args.store, args.index)
-        print(json.dumps({"entries": index.rebuild(), "index": str(index.index_path)}, indent=2))
+        print(
+            json.dumps(
+                {"entries": index.rebuild(), "index": str(index.index_path)},
+                indent=2,
+            )
+        )
     elif args.command == "index-query":
         index = JsonlObservationIndex(args.store, args.index)
-        observations = index.query(ObservationQuery(metric=args.metric, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, observed_from=args.observed_from, observed_to=args.observed_to))
+        observations = index.query(
+            ObservationQuery(
+                metric=args.metric,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+            )
+        )
         print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
     elif args.command == "timeline-query":
-        result = ObservationTimeline(JsonlObservationIndex(args.store, args.index)).query(TimelineQuery(observed_from=args.observed_from, observed_to=args.observed_to, day=args.day, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, metric_prefix=args.metric_prefix))
+        result = ObservationTimeline(
+            JsonlObservationIndex(args.store, args.index)
+        ).query(
+            TimelineQuery(
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+                day=args.day,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                metric_prefix=args.metric_prefix,
+            )
+        )
         print(json.dumps(asdict(result), indent=2, default=str))
     elif args.command == "statistics":
-        result = DescriptiveStatistics(ObservationTimeline(JsonlObservationIndex(args.store, args.index))).summarize(StatisticsQuery(metric=args.metric, observed_from=args.observed_from, observed_to=args.observed_to, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name))
+        result = DescriptiveStatistics(
+            ObservationTimeline(JsonlObservationIndex(args.store, args.index))
+        ).summarize(
+            StatisticsQuery(
+                metric=args.metric,
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+            )
+        )
         print(json.dumps(asdict(result), indent=2, default=str))
     elif args.command == "catalog":
-        result = ObservationCatalog(JsonlObservationStore(args.store)).build(CatalogQuery(metric_prefix=args.metric_prefix, parser_name=args.parser_name, source_evidence_id=args.source_evidence_id))
+        result = ObservationCatalog(JsonlObservationStore(args.store)).build(
+            CatalogQuery(
+                metric_prefix=args.metric_prefix,
+                parser_name=args.parser_name,
+                source_evidence_id=args.source_evidence_id,
+            )
+        )
         print(json.dumps(asdict(result), indent=2, default=str))
     elif args.command == "analytics":
         service = _analytics_service(args.store, args.index)
-        query = AnalyticsQuery(metric=args.metric, observed_from=args.observed_from, observed_to=args.observed_to, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name)
+        query = AnalyticsQuery(
+            metric=args.metric,
+            observed_from=args.observed_from,
+            observed_to=args.observed_to,
+            source_evidence_id=args.source_evidence_id,
+            parser_name=args.parser_name,
+        )
         if args.operation == "moving-average":
             result = service.moving_average(query, window_days=args.window_days)
         elif args.operation == "trend":
@@ -181,11 +276,20 @@ def main() -> int:
             result = service.outliers(query)
         print(json.dumps(asdict(result), indent=2, default=str))
     elif args.command == "validate-store":
-        report = validate_store(args.store, args.index, rebuild_index=not args.no_rebuild_index)
+        report = validate_store(
+            args.store,
+            args.index,
+            rebuild_index=not args.no_rebuild_index,
+        )
         print(json.dumps(report.to_dict(), indent=2))
         return 0 if report.succeeded else 1
     elif args.command == "garmin-sleep-import":
-        report = run_garmin_sleep_import(args.archive, args.store, args.index, patterns=tuple(args.pattern or ("*sleepData.json",)))
+        report = run_garmin_sleep_import(
+            args.archive,
+            args.store,
+            args.index,
+            patterns=tuple(args.pattern or ("*sleepData.json",)),
+        )
         payload = report.to_dict()
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
