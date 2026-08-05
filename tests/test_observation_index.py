@@ -7,7 +7,11 @@ from pathlib import Path
 import pytest
 
 from crow_health.evidence.models import Observation
-from crow_health.storage import JsonlObservationIndex, JsonlObservationStore, ObservationQuery
+from crow_health.storage import (
+    JsonlObservationIndex,
+    JsonlObservationStore,
+    ObservationQuery,
+)
 
 
 def _observation(
@@ -136,7 +140,8 @@ def test_query_detects_stale_index_offsets(tmp_path: Path) -> None:
     )
     index = JsonlObservationIndex(store_path)
     index.rebuild()
-    store_path.write_text(store_path.read_text(encoding="utf-8").replace('"one"', '"two"'), encoding="utf-8")
+    changed = store_path.read_text(encoding="utf-8").replace('"one"', '"two"')
+    store_path.write_text(changed, encoding="utf-8")
 
     with pytest.raises(ValueError, match="does not match"):
         index.query(ObservationQuery())
