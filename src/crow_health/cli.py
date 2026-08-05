@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 from dataclasses import asdict
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from crow_health.evidence.archive import archive_file
@@ -15,6 +15,7 @@ from crow_health.importing import BatchImportService, ImportService, load_json_z
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.runtime import runtime_identity
 from crow_health.storage import JsonlObservationIndex, JsonlObservationStore, ObservationQuery
+from crow_health.timeline import ObservationTimeline, TimelineQuery
 from crow_health.validation import validate_store
 
 
@@ -62,6 +63,16 @@ def parser() -> argparse.ArgumentParser:
     index_query.add_argument("--parser-name")
     index_query.add_argument("--from", dest="observed_from", type=datetime.fromisoformat)
     index_query.add_argument("--to", dest="observed_to", type=datetime.fromisoformat)
+
+    timeline_query = sub.add_parser("timeline-query")
+    timeline_query.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
+    timeline_query.add_argument("--index", type=Path, default=None)
+    timeline_query.add_argument("--day", type=date.fromisoformat)
+    timeline_query.add_argument("--from", dest="observed_from", type=datetime.fromisoformat)
+    timeline_query.add_argument("--to", dest="observed_to", type=datetime.fromisoformat)
+    timeline_query.add_argument("--source-evidence-id")
+    timeline_query.add_argument("--parser-name")
+    timeline_query.add_argument("--metric-prefix")
 
     validate = sub.add_parser("validate-store")
     validate.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
@@ -119,6 +130,20 @@ def main() -> int:
         index = JsonlObservationIndex(args.store, args.index)
         observations = index.query(ObservationQuery(metric=args.metric, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, observed_from=args.observed_from, observed_to=args.observed_to))
         print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
+    elif args.command == "timeline-query":
+        timeline_result = ObservationTimeline(
+            JsonlObservationIndex(args.store, args.index)
+        ).query(
+            TimelineQuery(
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+                day=args.day,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                metric_prefix=args.metric_prefix,
+            )
+        )
+        print(json.dumps(asdict(timeline_result), indent=2, default=str))
     elif args.command == "validate-store":
         validation_report = validate_store(
             args.store,
