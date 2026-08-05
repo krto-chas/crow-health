@@ -6,6 +6,7 @@ from dataclasses import asdict
 from datetime import date, datetime
 from pathlib import Path
 
+from crow_health.catalog import CatalogQuery, ObservationCatalog
 from crow_health.evidence.archive import archive_file
 from crow_health.garmin.full_import import run_garmin_sleep_import
 from crow_health.garmin.inventory import inventory_zip, write_inventory
@@ -84,6 +85,12 @@ def parser() -> argparse.ArgumentParser:
     statistics.add_argument("--source-evidence-id")
     statistics.add_argument("--parser-name")
 
+    catalog = sub.add_parser("catalog")
+    catalog.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
+    catalog.add_argument("--metric-prefix")
+    catalog.add_argument("--source-evidence-id")
+    catalog.add_argument("--parser-name")
+
     validate = sub.add_parser("validate-store")
     validate.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
     validate.add_argument("--index", type=Path, default=None)
@@ -111,114 +118,45 @@ def main() -> int:
     elif args.command == "inventory-export":
         inventory = inventory_zip(args.path)
         write_inventory(inventory, args.output)
-        print(
-            json.dumps(
-                {
-                    "file_count": inventory.file_count,
-                    "total_bytes": inventory.total_bytes,
-                    "output": str(args.output),
-                },
-                indent=2,
-            )
-        )
+        print(json.dumps({"file_count": inventory.file_count, "total_bytes": inventory.total_bytes, "output": str(args.output)}, indent=2))
     elif args.command == "profile-export":
         families = profile_json_families(args.path)
         write_profile(families, args.output)
-        print(
-            json.dumps(
-                {"json_families": len(families), "output": str(args.output)},
-                indent=2,
-            )
-        )
+        print(json.dumps({"json_families": len(families), "output": str(args.output)}, indent=2))
     elif args.command == "inspect-json":
         schema_profile = inspect_zip_json(args.archive, args.member_path)
         write_schema_profile(schema_profile, args.output)
-        print(
-            json.dumps(
-                {
-                    "source_path": schema_profile.source_path,
-                    "record_count": schema_profile.record_count,
-                    "field_count": len(schema_profile.fields),
-                    "output": str(args.output),
-                },
-                indent=2,
-            )
-        )
+        print(json.dumps({"source_path": schema_profile.source_path, "record_count": schema_profile.record_count, "field_count": len(schema_profile.fields), "output": str(args.output)}, indent=2))
     elif args.command == "import-json-member":
-        member_report = _import_service(args.store).import_document(
-            load_json_zip_member(args.archive, args.member_path)
-        )
+        member_report = _import_service(args.store).import_document(load_json_zip_member(args.archive, args.member_path))
         print(json.dumps(asdict(member_report), indent=2))
         return 0 if member_report.persisted else 1
     elif args.command == "import-json-batch":
-        batch_report = BatchImportService(_import_service(args.store)).import_zip(
-            args.archive,
-            patterns=tuple(args.pattern or ("*sleepData.json",)),
-        )
+        batch_report = BatchImportService(_import_service(args.store)).import_zip(args.archive, patterns=tuple(args.pattern or ("*sleepData.json",)))
         print(json.dumps(asdict(batch_report), indent=2))
         return 0 if batch_report.succeeded else 1
     elif args.command == "index-build":
         index = JsonlObservationIndex(args.store, args.index)
-        print(
-            json.dumps(
-                {"entries": index.rebuild(), "index": str(index.index_path)},
-                indent=2,
-            )
-        )
+        print(json.dumps({"entries": index.rebuild(), "index": str(index.index_path)}, indent=2))
     elif args.command == "index-query":
         index = JsonlObservationIndex(args.store, args.index)
-        observations = index.query(
-            ObservationQuery(
-                metric=args.metric,
-                source_evidence_id=args.source_evidence_id,
-                parser_name=args.parser_name,
-                observed_from=args.observed_from,
-                observed_to=args.observed_to,
-            )
-        )
+        observations = index.query(ObservationQuery(metric=args.metric, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, observed_from=args.observed_from, observed_to=args.observed_to))
         print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
     elif args.command == "timeline-query":
-        timeline_result = ObservationTimeline(
-            JsonlObservationIndex(args.store, args.index)
-        ).query(
-            TimelineQuery(
-                observed_from=args.observed_from,
-                observed_to=args.observed_to,
-                day=args.day,
-                source_evidence_id=args.source_evidence_id,
-                parser_name=args.parser_name,
-                metric_prefix=args.metric_prefix,
-            )
-        )
+        timeline_result = ObservationTimeline(JsonlObservationIndex(args.store, args.index)).query(TimelineQuery(observed_from=args.observed_from, observed_to=args.observed_to, day=args.day, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, metric_prefix=args.metric_prefix))
         print(json.dumps(asdict(timeline_result), indent=2, default=str))
     elif args.command == "statistics":
-        statistics_result = DescriptiveStatistics(
-            ObservationTimeline(JsonlObservationIndex(args.store, args.index))
-        ).summarize(
-            StatisticsQuery(
-                metric=args.metric,
-                observed_from=args.observed_from,
-                observed_to=args.observed_to,
-                source_evidence_id=args.source_evidence_id,
-                parser_name=args.parser_name,
-            )
-        )
+        statistics_result = DescriptiveStatistics(ObservationTimeline(JsonlObservationIndex(args.store, args.index))).summarize(StatisticsQuery(metric=args.metric, observed_from=args.observed_from, observed_to=args.observed_to, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name))
         print(json.dumps(asdict(statistics_result), indent=2, default=str))
+    elif args.command == "catalog":
+        catalog_result = ObservationCatalog(JsonlObservationStore(args.store)).build(CatalogQuery(metric_prefix=args.metric_prefix, parser_name=args.parser_name, source_evidence_id=args.source_evidence_id))
+        print(json.dumps(asdict(catalog_result), indent=2, default=str))
     elif args.command == "validate-store":
-        validation_report = validate_store(
-            args.store,
-            args.index,
-            rebuild_index=not args.no_rebuild_index,
-        )
+        validation_report = validate_store(args.store, args.index, rebuild_index=not args.no_rebuild_index)
         print(json.dumps(validation_report.to_dict(), indent=2))
         return 0 if validation_report.succeeded else 1
     elif args.command == "garmin-sleep-import":
-        garmin_report = run_garmin_sleep_import(
-            args.archive,
-            args.store,
-            args.index,
-            patterns=tuple(args.pattern or ("*sleepData.json",)),
-        )
+        garmin_report = run_garmin_sleep_import(args.archive, args.store, args.index, patterns=tuple(args.pattern or ("*sleepData.json",)))
         payload = garmin_report.to_dict()
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
