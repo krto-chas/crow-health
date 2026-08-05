@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased — RC0 Pass 8
+## Unreleased — RC0 Pass 9
+
+- Added a full Garmin sleep import workflow that runs batch import, index rebuild and validation.
+- Added deterministic validation summaries for observations, metrics, parsers, sources and time coverage.
+- Added `garmin-sleep-import` and `validate-store` CLI commands.
+- Added optional JSON report output for evidence from a real local Garmin archive run.
+- Added tests for populated and empty stores.
+- No personal Garmin data or generated validation report has been committed.
+
+## RC0 Pass 8
 
 - Added a rebuildable metadata index for append-only JSONL observations.
 - Added byte-offset lookup without changing the authoritative observation store.
