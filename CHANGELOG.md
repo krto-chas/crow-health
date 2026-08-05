@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased — RC0 Pass 13
+
+- Added a deterministic observation catalog over the authoritative store.
+- Added per-metric counts, timestamp coverage, value types, units, parsers and source counts.
+- Added explicit numeric counts and statistics-support reporting without coercion or unit conversion.
+- Added metric-prefix, parser and source filtering.
+- Added the `catalog` CLI command and runtime capability reporting.
+- Added synthetic tests for ordering, filtering, mixed units, non-numeric values and empty stores.
+- No medical interpretation, metric naming registry, dashboard or Home Assistant integration has been added.
+
 ## Unreleased — RC0 Pass 12
 
 - Added neutral descriptive statistics for one exact numeric metric at a time.
