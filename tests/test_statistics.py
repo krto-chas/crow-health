@@ -12,7 +12,7 @@ from crow_health.timeline import ObservationTimeline
 def observation(
     observation_id: str,
     metric: str,
-    value: int | float | str | bool | None,
+    value: float | str | bool | None,
     observed_at: datetime | None,
     *,
     unit: str | None = None,
