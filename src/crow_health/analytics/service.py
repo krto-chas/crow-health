@@ -14,7 +14,11 @@ from crow_health.analytics.models import (
     TrendDirection,
     TrendResult,
 )
-from crow_health.statistics import DescriptiveStatistics, StatisticsQuery
+from crow_health.statistics import (
+    DescriptiveStatistics,
+    MetricStatistics,
+    StatisticsQuery,
+)
 
 
 class AnalyticsService:
@@ -131,7 +135,7 @@ class AnalyticsService:
             points=points,
         )
 
-    def _summary(self, query: AnalyticsQuery):
+    def _summary(self, query: AnalyticsQuery) -> MetricStatistics:
         return self._statistics.summarize(
             StatisticsQuery(
                 metric=query.metric,
