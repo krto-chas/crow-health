@@ -6,36 +6,36 @@ from datetime import date, datetime
 
 @dataclass(frozen=True, slots=True)
 class SleepStages:
-    awake_seconds: int
-    deep_seconds: int
-    light_seconds: int
-    rem_seconds: int
-    unmeasurable_seconds: int
+    awake_seconds: int | None
+    deep_seconds: int | None
+    light_seconds: int | None
+    rem_seconds: int | None
+    unmeasurable_seconds: int | None
 
 
 @dataclass(frozen=True, slots=True)
 class SleepRespiration:
-    average: float
-    highest: float
-    lowest: float
+    average: float | None
+    highest: float | None
+    lowest: float | None
 
 
 @dataclass(frozen=True, slots=True)
 class SleepScore:
-    overall: int
-    quality: int
-    recovery: int
-    duration: int
-    deep: int
-    rem: int
-    light: int
-    restfulness: int
-    awake_time: int
-    awakenings_count: int
-    combined_awake: int
-    interruptions: int
-    feedback: str
-    insight: str
+    overall: int | None
+    quality: int | None
+    recovery: int | None
+    duration: int | None
+    deep: int | None
+    rem: int | None
+    light: int | None
+    restfulness: int | None
+    awake_time: int | None
+    awakenings_count: int | None
+    combined_awake: int | None
+    interruptions: int | None
+    feedback: str | None
+    insight: str | None
 
 
 @dataclass(frozen=True, slots=True)
@@ -45,9 +45,9 @@ class SleepSession:
     ended_at: datetime
     stages: SleepStages
     respiration: SleepRespiration
-    score: SleepScore
-    average_stress: float
-    awake_count: int
-    restless_moment_count: int
-    retro: bool
-    confirmation_type: str
+    score: SleepScore | None
+    average_stress: float | None
+    awake_count: int | None
+    restless_moment_count: int | None
+    retro: bool | None
+    confirmation_type: str | None

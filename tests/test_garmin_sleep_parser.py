@@ -67,6 +67,35 @@ def test_parser_normalizes_observed_sleep_schema() -> None:
     assert all(record.imported_at == imported_at for record in result.records)
 
 
+def test_legacy_record_without_score_object_preserves_available_measurements() -> None:
+    raw = sleep_record()
+    raw["sleepScores"] = None
+
+    result = GarminSleepParser().parse(document([raw]))
+
+    metrics = {record.metric for record in result.records}
+    assert result.errors == ()
+    assert "sleep.deep_seconds" in metrics
+    assert "sleep.score.overall" not in metrics
+    assert result.warnings[0].code == "legacy_sleep_scores_unavailable"
+
+
+def test_missing_optional_modern_fields_are_omitted() -> None:
+    raw = sleep_record()
+    del raw["remSleepSeconds"]
+    scores = raw["sleepScores"]
+    assert isinstance(scores, dict)
+    del scores["interruptionsScore"]
+
+    result = GarminSleepParser().parse(document([raw]))
+
+    metrics = {record.metric for record in result.records}
+    assert result.errors == ()
+    assert "sleep.rem_seconds" not in metrics
+    assert "sleep.score.interruptions" not in metrics
+    assert "sleep.score.overall" in metrics
+
+
 def test_observation_ids_are_deterministic() -> None:
     parser = GarminSleepParser(imported_at=datetime(2026, 8, 4, tzinfo=UTC))
     first = parser.parse(document([sleep_record()]))

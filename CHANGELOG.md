@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased — RC0 Pass 9
+## Unreleased — RC0 Pass 10
+
+- Added legacy-compatible Garmin sleep parsing based on the first full local archive report.
+- Preserved available measurements when `sleepScores` is absent or not an object.
+- Made historically variable measurements and individual score components optional.
+- Omitted unavailable metrics instead of creating guessed or placeholder values.
+- Added structured warnings for legacy records without score objects.
+- Added synthetic tests for legacy records and partially populated modern records.
+- No undocumented legacy score interpretation or personal Garmin data has been committed.
+
+## RC0 Pass 9
 
 - Added a full Garmin sleep import workflow that runs batch import, index rebuild and validation.
 - Added deterministic validation summaries for observations, metrics, parsers, sources and time coverage.
