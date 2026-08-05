@@ -55,14 +55,13 @@ class DescriptiveStatistics:
                 observed_to=query.observed_to,
                 source_evidence_id=query.source_evidence_id,
                 parser_name=query.parser_name,
-                metric_prefix=query.metric,
+                metric=query.metric,
             )
         )
         matching = tuple(
             observation
             for group in timeline.groups
             for observation in group.observations
-            if observation.metric == query.metric
         )
         numeric, excluded_non_numeric = _numeric_observations(matching)
         unit = _common_unit(numeric)
