@@ -1,6 +1,16 @@
 # Changelog
 
-## Unreleased — RC0 Pass 10
+## Unreleased — RC0 Pass 11
+
+- Added a read-only observation timeline over the rebuildable index.
+- Added deterministic grouping by observation timestamp, evidence source and parser.
+- Added UTC day, explicit time range, source, parser and metric-prefix filtering.
+- Added reporting for observations excluded because they lack timestamps.
+- Added the `timeline-query` CLI command and runtime capability reporting.
+- Added synthetic tests for grouping, ordering, filtering and missing timestamps.
+- No analytics, medical interpretation, dashboard or Home Assistant integration has been added.
+
+## RC0 Pass 10
 
 - Added legacy-compatible Garmin sleep parsing based on the first full local archive report.
 - Preserved available measurements when `sleepScores` is absent or not an object.
