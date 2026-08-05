@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 from dataclasses import asdict
+from datetime import datetime
 from pathlib import Path
 
 from crow_health.evidence.archive import archive_file
@@ -16,7 +17,11 @@ from crow_health.importing import (
 )
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.runtime import runtime_identity
-from crow_health.storage import JsonlObservationStore
+from crow_health.storage import (
+    JsonlObservationIndex,
+    JsonlObservationStore,
+    ObservationQuery,
+)
 
 
 def parser() -> argparse.ArgumentParser:
@@ -64,6 +69,27 @@ def parser() -> argparse.ArgumentParser:
         type=Path,
         default=Path("data/observations.jsonl"),
     )
+
+    index_build = sub.add_parser("index-build")
+    index_build.add_argument(
+        "--store",
+        type=Path,
+        default=Path("data/observations.jsonl"),
+    )
+    index_build.add_argument("--index", type=Path, default=None)
+
+    index_query = sub.add_parser("index-query")
+    index_query.add_argument(
+        "--store",
+        type=Path,
+        default=Path("data/observations.jsonl"),
+    )
+    index_query.add_argument("--index", type=Path, default=None)
+    index_query.add_argument("--metric")
+    index_query.add_argument("--source-evidence-id")
+    index_query.add_argument("--parser-name")
+    index_query.add_argument("--from", dest="observed_from", type=datetime.fromisoformat)
+    index_query.add_argument("--to", dest="observed_to", type=datetime.fromisoformat)
 
     return root
 
@@ -130,4 +156,25 @@ def main() -> int:
         )
         print(json.dumps(asdict(batch_report), indent=2))
         return 0 if batch_report.succeeded else 1
+    elif args.command == "index-build":
+        index = JsonlObservationIndex(args.store, args.index)
+        entry_count = index.rebuild()
+        print(
+            json.dumps(
+                {"entries": entry_count, "index": str(index.index_path)},
+                indent=2,
+            )
+        )
+    elif args.command == "index-query":
+        index = JsonlObservationIndex(args.store, args.index)
+        observations = index.query(
+            ObservationQuery(
+                metric=args.metric,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+            )
+        )
+        print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
     return 0
