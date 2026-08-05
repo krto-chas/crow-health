@@ -100,13 +100,18 @@ def main() -> int:
         write_schema_profile(schema_profile, args.output)
         print(json.dumps({"source_path": schema_profile.source_path, "record_count": schema_profile.record_count, "field_count": len(schema_profile.fields), "output": str(args.output)}, indent=2))
     elif args.command == "import-json-member":
-        report = _import_service(args.store).import_document(load_json_zip_member(args.archive, args.member_path))
-        print(json.dumps(asdict(report), indent=2))
-        return 0 if report.persisted else 1
+        member_report = _import_service(args.store).import_document(
+            load_json_zip_member(args.archive, args.member_path)
+        )
+        print(json.dumps(asdict(member_report), indent=2))
+        return 0 if member_report.persisted else 1
     elif args.command == "import-json-batch":
-        report = BatchImportService(_import_service(args.store)).import_zip(args.archive, patterns=tuple(args.pattern or ("*sleepData.json",)))
-        print(json.dumps(asdict(report), indent=2))
-        return 0 if report.succeeded else 1
+        batch_report = BatchImportService(_import_service(args.store)).import_zip(
+            args.archive,
+            patterns=tuple(args.pattern or ("*sleepData.json",)),
+        )
+        print(json.dumps(asdict(batch_report), indent=2))
+        return 0 if batch_report.succeeded else 1
     elif args.command == "index-build":
         index = JsonlObservationIndex(args.store, args.index)
         print(json.dumps({"entries": index.rebuild(), "index": str(index.index_path)}, indent=2))
@@ -115,15 +120,24 @@ def main() -> int:
         observations = index.query(ObservationQuery(metric=args.metric, source_evidence_id=args.source_evidence_id, parser_name=args.parser_name, observed_from=args.observed_from, observed_to=args.observed_to))
         print(json.dumps([asdict(item) for item in observations], indent=2, default=str))
     elif args.command == "validate-store":
-        report = validate_store(args.store, args.index, rebuild_index=not args.no_rebuild_index)
-        print(json.dumps(report.to_dict(), indent=2))
-        return 0 if report.succeeded else 1
+        validation_report = validate_store(
+            args.store,
+            args.index,
+            rebuild_index=not args.no_rebuild_index,
+        )
+        print(json.dumps(validation_report.to_dict(), indent=2))
+        return 0 if validation_report.succeeded else 1
     elif args.command == "garmin-sleep-import":
-        report = run_garmin_sleep_import(args.archive, args.store, args.index, patterns=tuple(args.pattern or ("*sleepData.json",)))
-        payload = report.to_dict()
+        garmin_report = run_garmin_sleep_import(
+            args.archive,
+            args.store,
+            args.index,
+            patterns=tuple(args.pattern or ("*sleepData.json",)),
+        )
+        payload = garmin_report.to_dict()
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
         print(json.dumps(payload, indent=2))
-        return 0 if report.succeeded else 1
+        return 0 if garmin_report.succeeded else 1
     return 0
