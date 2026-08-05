@@ -148,12 +148,10 @@ def _matches(entry: ObservationIndexEntry, query: ObservationQuery) -> bool:
         and (entry.observed_at is None or entry.observed_at < query.observed_from)
     ):
         return False
-    if (
+    return not (
         query.observed_to is not None
         and (entry.observed_at is None or entry.observed_at > query.observed_to)
-    ):
-        return False
-    return True
+    )
 
 
 def _entry_to_dict(entry: ObservationIndexEntry) -> dict[str, object]:
