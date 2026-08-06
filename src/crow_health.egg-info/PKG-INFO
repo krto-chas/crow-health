@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: crow-health
-Version: 0.3.0
-Summary: Evidence-first foundation for personal health data
-Requires-Python: >=3.11
-Provides-Extra: dev
-Requires-Dist: pytest<9,>=8; extra == "dev"
-Requires-Dist: ruff<1,>=0.9; extra == "dev"
-Requires-Dist: mypy<2,>=1.14; extra == "dev"
