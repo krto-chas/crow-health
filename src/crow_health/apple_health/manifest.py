@@ -9,6 +9,10 @@ from crow_health.apple_health.models import AppleHealthManifestEntry
 
 def load_manifest(path: Path) -> tuple[AppleHealthManifestEntry, ...]:
     payload = json.loads(path.read_text(encoding="utf-8"))
+    return load_manifest_payload(payload)
+
+
+def load_manifest_payload(payload: object) -> tuple[AppleHealthManifestEntry, ...]:
     if not isinstance(payload, dict) or payload.get("schema_version") != "crow-health.apple-health-manifest.v1":
         raise ValueError("Unsupported Apple Health manifest schema")
     raw_entries = payload.get("entries")
