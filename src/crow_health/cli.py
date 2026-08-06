@@ -22,6 +22,7 @@ from crow_health.garmin.schema import inspect_zip_json, write_schema_profile
 from crow_health.importing import BatchImportService, ImportService, load_json_zip_member
 from crow_health.parsers.defaults import default_parser_registry
 from crow_health.runtime import runtime_identity
+from crow_health.snapshot import PresentationSnapshot, SnapshotQuery, SnapshotService
 from crow_health.statistics import DescriptiveStatistics, MetricStatistics, StatisticsQuery
 from crow_health.storage import JsonlObservationIndex, JsonlObservationStore, ObservationQuery
 from crow_health.timeline import ObservationTimeline, TimelineQuery, TimelineResult
@@ -48,7 +49,9 @@ def parser() -> argparse.ArgumentParser:
     inspect_json = sub.add_parser("inspect-json")
     inspect_json.add_argument("archive", type=Path)
     inspect_json.add_argument("member_path")
-    inspect_json.add_argument("--output", type=Path, default=Path("data/json_schema_profile.json"))
+    inspect_json.add_argument(
+        "--output", type=Path, default=Path("data/json_schema_profile.json")
+    )
 
     import_member = sub.add_parser("import-json-member")
     import_member.add_argument("archive", type=Path)
@@ -112,6 +115,17 @@ def parser() -> argparse.ArgumentParser:
     analytics.add_argument("--parser-name")
     analytics.add_argument("--window-days", type=int, default=7)
 
+    snapshot = sub.add_parser("snapshot-export")
+    snapshot.add_argument("--metric", action="append", required=True)
+    snapshot.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
+    snapshot.add_argument("--index", type=Path, default=None)
+    snapshot.add_argument("--from", dest="observed_from", type=datetime.fromisoformat)
+    snapshot.add_argument("--to", dest="observed_to", type=datetime.fromisoformat)
+    snapshot.add_argument("--source-evidence-id")
+    snapshot.add_argument("--parser-name")
+    snapshot.add_argument("--window-days", type=int, default=7)
+    snapshot.add_argument("--output", type=Path, default=None)
+
     validate = sub.add_parser("validate-store")
     validate.add_argument("--store", type=Path, default=Path("data/observations.jsonl"))
     validate.add_argument("--index", type=Path, default=None)
@@ -130,9 +144,18 @@ def _import_service(store: Path) -> ImportService:
     return ImportService(default_parser_registry(), JsonlObservationStore(store))
 
 
-def _analytics_service(store: Path, index: Path | None) -> AnalyticsService:
+def _statistics_service(store: Path, index: Path | None) -> DescriptiveStatistics:
     timeline = ObservationTimeline(JsonlObservationIndex(store, index))
-    return AnalyticsService(DescriptiveStatistics(timeline))
+    return DescriptiveStatistics(timeline)
+
+
+def _analytics_service(store: Path, index: Path | None) -> AnalyticsService:
+    return AnalyticsService(_statistics_service(store, index))
+
+
+def _snapshot_service(store: Path, index: Path | None) -> SnapshotService:
+    statistics = _statistics_service(store, index)
+    return SnapshotService(statistics, AnalyticsService(statistics))
 
 
 def main() -> int:
@@ -145,6 +168,7 @@ def main() -> int:
         | TrendResult
         | CompletenessResult
         | OutlierResult
+        | PresentationSnapshot
     )
     report: StoreValidationReport | GarminSleepImportReport
 
@@ -210,8 +234,7 @@ def main() -> int:
             )
         )
     elif args.command == "index-query":
-        index = JsonlObservationIndex(args.store, args.index)
-        observations = index.query(
+        observations = JsonlObservationIndex(args.store, args.index).query(
             ObservationQuery(
                 metric=args.metric,
                 source_evidence_id=args.source_evidence_id,
@@ -236,9 +259,7 @@ def main() -> int:
         )
         print(json.dumps(asdict(result), indent=2, default=str))
     elif args.command == "statistics":
-        result = DescriptiveStatistics(
-            ObservationTimeline(JsonlObservationIndex(args.store, args.index))
-        ).summarize(
+        result = _statistics_service(args.store, args.index).summarize(
             StatisticsQuery(
                 metric=args.metric,
                 observed_from=args.observed_from,
@@ -275,6 +296,22 @@ def main() -> int:
         else:
             result = service.outliers(query)
         print(json.dumps(asdict(result), indent=2, default=str))
+    elif args.command == "snapshot-export":
+        result = _snapshot_service(args.store, args.index).build(
+            SnapshotQuery(
+                metrics=tuple(args.metric),
+                observed_from=args.observed_from,
+                observed_to=args.observed_to,
+                source_evidence_id=args.source_evidence_id,
+                parser_name=args.parser_name,
+                moving_average_window_days=args.window_days,
+            )
+        )
+        payload = json.dumps(result.to_dict(), indent=2, default=str)
+        if args.output is not None:
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(payload, encoding="utf-8")
+        print(payload)
     elif args.command == "validate-store":
         report = validate_store(
             args.store,
