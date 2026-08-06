@@ -5,6 +5,7 @@ from datetime import date, datetime
 from typing import Any
 
 from crow_health.analytics import AnalyticsQuery, AnalyticsService
+from crow_health.registry import MetricRegistry, default_metric_registry
 from crow_health.statistics import DescriptiveStatistics, StatisticsQuery
 
 SNAPSHOT_SCHEMA_VERSION = "crow-health.snapshot.v1"
@@ -23,6 +24,10 @@ class SnapshotQuery:
 @dataclass(frozen=True, slots=True)
 class SnapshotMetric:
     metric: str
+    display_name: str
+    description: str
+    category: str
+    value_type: str
     unit: str | None
     observation_count: int
     covered_days: int
@@ -65,9 +70,11 @@ class SnapshotService:
         self,
         statistics: DescriptiveStatistics,
         analytics: AnalyticsService,
+        registry: MetricRegistry | None = None,
     ) -> None:
         self._statistics = statistics
         self._analytics = analytics
+        self._registry = registry or default_metric_registry()
 
     def build(self, query: SnapshotQuery) -> PresentationSnapshot:
         metrics = tuple(sorted(set(query.metrics)))
@@ -88,6 +95,7 @@ class SnapshotService:
         )
 
     def _metric(self, metric: str, query: SnapshotQuery) -> SnapshotMetric:
+        definition = self._registry.get(metric)
         statistics_query = StatisticsQuery(
             metric=metric,
             observed_from=query.observed_from,
@@ -115,7 +123,11 @@ class SnapshotService:
 
         return SnapshotMetric(
             metric=metric,
-            unit=summary.unit,
+            display_name=definition.display_name,
+            description=definition.description,
+            category=definition.category,
+            value_type=definition.value_type.value,
+            unit=definition.unit,
             observation_count=summary.count,
             covered_days=summary.covered_days,
             first_observed_at=summary.first_observed_at,
@@ -125,12 +137,8 @@ class SnapshotService:
             mean=summary.mean,
             latest_day=latest.day if latest is not None else None,
             latest_value=latest.mean if latest is not None else None,
-            moving_average=(
-                latest_average.value if latest_average is not None else None
-            ),
-            trend_direction=(
-                trend.direction.value if trend.direction is not None else None
-            ),
+            moving_average=latest_average.value if latest_average is not None else None,
+            trend_direction=trend.direction.value if trend.direction is not None else None,
             trend_difference=trend.difference,
             trend_percent_change=trend.percent_change,
             coverage_percent=completeness.coverage_percent,
