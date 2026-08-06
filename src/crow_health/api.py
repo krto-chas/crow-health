@@ -21,6 +21,7 @@ from crow_health.timeline import ObservationTimeline, TimelineQuery
 API_VERSION = "crow-health.api.v1"
 ObservedFromQuery = Annotated[datetime | None, Query(alias="from")]
 ObservedToQuery = Annotated[datetime | None, Query(alias="to")]
+WindowDaysQuery = Annotated[int, Query(ge=1)]
 
 
 def create_app(
@@ -126,7 +127,7 @@ def create_app(
         observed_to: ObservedToQuery = None,
         source_evidence_id: str | None = None,
         parser_name: str | None = None,
-        window_days: int = Query(default=7, ge=1),
+        window_days: WindowDaysQuery = 7,
     ) -> Any:
         try:
             result = snapshots.build(
