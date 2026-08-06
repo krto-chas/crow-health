@@ -51,6 +51,7 @@ def runtime_identity(*, cwd: Path | None = None) -> RuntimeIdentity:
             "statistics",
             "catalog",
             "analytics",
+            "snapshot-export",
             "validate-store",
             "garmin-sleep-import",
             "version",
