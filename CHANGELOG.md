@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — RC0 Pass 18
+
+- Added a deterministic Home Assistant MQTT discovery and state projection over versioned snapshots.
+- Added retained discovery topics, stable entity identifiers and snapshot-derived attributes.
+- Added the `crow-health-ha` JSON Lines export command for review and later publication.
+- Added synthetic tests for topic generation, state payloads, deterministic output and custom prefixes.
+- No MQTT broker connection, credentials, scheduling or automatic Garmin retrieval has been added.
+
 ## Unreleased — RC0 Pass 15
 
 - Added a versioned, deterministic presentation snapshot contract.
