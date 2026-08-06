@@ -1,0 +1,2 @@
+[console_scripts]
+crow-health = crow_health.cli:main

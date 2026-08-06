@@ -7,7 +7,6 @@ from typing import Any
 from crow_health.analytics import AnalyticsQuery, AnalyticsService
 from crow_health.statistics import DescriptiveStatistics, StatisticsQuery
 
-
 SNAPSHOT_SCHEMA_VERSION = "crow-health.snapshot.v1"
 
 
