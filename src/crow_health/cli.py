@@ -307,11 +307,11 @@ def main() -> int:
                 moving_average_window_days=args.window_days,
             )
         )
-        payload = json.dumps(result.to_dict(), indent=2, default=str)
+        snapshot_payload = json.dumps(result.to_dict(), indent=2, default=str)
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
-            args.output.write_text(payload, encoding="utf-8")
-        print(payload)
+            args.output.write_text(snapshot_payload, encoding="utf-8")
+        print(snapshot_payload)
     elif args.command == "validate-store":
         report = validate_store(
             args.store,
@@ -327,10 +327,10 @@ def main() -> int:
             args.index,
             patterns=tuple(args.pattern or ("*sleepData.json",)),
         )
-        payload = report.to_dict()
+        garmin_payload = report.to_dict()
         if args.output is not None:
             args.output.parent.mkdir(parents=True, exist_ok=True)
-            args.output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-        print(json.dumps(payload, indent=2))
+            args.output.write_text(json.dumps(garmin_payload, indent=2), encoding="utf-8")
+        print(json.dumps(garmin_payload, indent=2))
         return 0 if report.succeeded else 1
     return 0
