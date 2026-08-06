@@ -35,11 +35,12 @@ class MetricRegistry:
         category: str | None = None,
         metric: str | None = None,
     ) -> tuple[MetricDefinition, ...]:
-        definitions = self._definitions.values()
-        if category is not None:
-            definitions = (item for item in definitions if item.category == category)
-        if metric is not None:
-            definitions = (item for item in definitions if item.metric == metric)
+        definitions = (
+            definition
+            for definition in self._definitions.values()
+            if (category is None or definition.category == category)
+            and (metric is None or definition.metric == metric)
+        )
         return tuple(sorted(definitions, key=lambda item: item.metric))
 
     def validate_observations(self, observations: Iterable[Observation]) -> None:
@@ -90,33 +91,203 @@ def _metric(
 
 
 _DEFAULT_DEFINITIONS = (
-    _metric("sleep.awake_seconds", "Awake time", "Awake time within the sleep session.", "s", MetricValueType.INTEGER),
-    _metric("sleep.deep_seconds", "Deep sleep", "Deep-sleep duration.", "s", MetricValueType.INTEGER),
-    _metric("sleep.light_seconds", "Light sleep", "Light-sleep duration.", "s", MetricValueType.INTEGER),
-    _metric("sleep.rem_seconds", "REM sleep", "REM-sleep duration.", "s", MetricValueType.INTEGER),
-    _metric("sleep.unmeasurable_seconds", "Unmeasurable sleep", "Duration Garmin could not classify.", "s", MetricValueType.INTEGER),
-    _metric("sleep.awake_count", "Awake count", "Recorded awakenings.", "count", MetricValueType.INTEGER),
-    _metric("sleep.restless_moment_count", "Restless moments", "Recorded restless moments.", "count", MetricValueType.INTEGER),
-    _metric("sleep.average_stress", "Average sleep stress", "Average stress value during sleep.", None, MetricValueType.NUMBER),
-    _metric("sleep.respiration.average", "Average respiration", "Average respiration during sleep.", None, MetricValueType.NUMBER),
-    _metric("sleep.respiration.highest", "Highest respiration", "Highest respiration during sleep.", None, MetricValueType.NUMBER),
-    _metric("sleep.respiration.lowest", "Lowest respiration", "Lowest respiration during sleep.", None, MetricValueType.NUMBER),
-    _metric("sleep.retro", "Retrospective sleep", "Garmin retrospective-record flag.", None, MetricValueType.BOOLEAN, statistics=False, analytics=False),
-    _metric("sleep.confirmation_type", "Confirmation type", "Garmin sleep-window confirmation type.", None, MetricValueType.STRING, statistics=False, analytics=False),
-    _metric("sleep.score.overall", "Overall sleep score", "Overall Garmin sleep score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.quality", "Sleep quality score", "Garmin sleep-quality score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.recovery", "Recovery score", "Garmin recovery score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.duration", "Duration score", "Garmin sleep-duration score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.deep", "Deep sleep score", "Garmin deep-sleep score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.rem", "REM sleep score", "Garmin REM-sleep score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.light", "Light sleep score", "Garmin light-sleep score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.restfulness", "Restfulness score", "Garmin restfulness score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.awake_time", "Awake-time score", "Garmin awake-time score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.awakenings_count", "Awakenings score", "Garmin awakenings-count score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.combined_awake", "Combined awake score", "Garmin combined-awake score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.interruptions", "Interruptions score", "Garmin interruptions score.", "score", MetricValueType.INTEGER),
-    _metric("sleep.score.feedback", "Sleep feedback", "Garmin sleep-score feedback text.", None, MetricValueType.STRING, statistics=False, analytics=False),
-    _metric("sleep.score.insight", "Sleep insight", "Garmin sleep-score insight text.", None, MetricValueType.STRING, statistics=False, analytics=False),
+    _metric(
+        "sleep.awake_seconds",
+        "Awake time",
+        "Awake time within the sleep session.",
+        "s",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.deep_seconds",
+        "Deep sleep",
+        "Deep-sleep duration.",
+        "s",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.light_seconds",
+        "Light sleep",
+        "Light-sleep duration.",
+        "s",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.rem_seconds",
+        "REM sleep",
+        "REM-sleep duration.",
+        "s",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.unmeasurable_seconds",
+        "Unmeasurable sleep",
+        "Duration Garmin could not classify.",
+        "s",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.awake_count",
+        "Awake count",
+        "Recorded awakenings.",
+        "count",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.restless_moment_count",
+        "Restless moments",
+        "Recorded restless moments.",
+        "count",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.average_stress",
+        "Average sleep stress",
+        "Average stress value during sleep.",
+        None,
+        MetricValueType.NUMBER,
+    ),
+    _metric(
+        "sleep.respiration.average",
+        "Average respiration",
+        "Average respiration during sleep.",
+        None,
+        MetricValueType.NUMBER,
+    ),
+    _metric(
+        "sleep.respiration.highest",
+        "Highest respiration",
+        "Highest respiration during sleep.",
+        None,
+        MetricValueType.NUMBER,
+    ),
+    _metric(
+        "sleep.respiration.lowest",
+        "Lowest respiration",
+        "Lowest respiration during sleep.",
+        None,
+        MetricValueType.NUMBER,
+    ),
+    _metric(
+        "sleep.retro",
+        "Retrospective sleep",
+        "Garmin retrospective-record flag.",
+        None,
+        MetricValueType.BOOLEAN,
+        statistics=False,
+        analytics=False,
+    ),
+    _metric(
+        "sleep.confirmation_type",
+        "Confirmation type",
+        "Garmin sleep-window confirmation type.",
+        None,
+        MetricValueType.STRING,
+        statistics=False,
+        analytics=False,
+    ),
+    _metric(
+        "sleep.score.overall",
+        "Overall sleep score",
+        "Overall Garmin sleep score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.quality",
+        "Sleep quality score",
+        "Garmin sleep-quality score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.recovery",
+        "Recovery score",
+        "Garmin recovery score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.duration",
+        "Duration score",
+        "Garmin sleep-duration score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.deep",
+        "Deep sleep score",
+        "Garmin deep-sleep score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.rem",
+        "REM sleep score",
+        "Garmin REM-sleep score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.light",
+        "Light sleep score",
+        "Garmin light-sleep score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.restfulness",
+        "Restfulness score",
+        "Garmin restfulness score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.awake_time",
+        "Awake-time score",
+        "Garmin awake-time score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.awakenings_count",
+        "Awakenings score",
+        "Garmin awakenings-count score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.combined_awake",
+        "Combined awake score",
+        "Garmin combined-awake score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.interruptions",
+        "Interruptions score",
+        "Garmin interruptions score.",
+        "score",
+        MetricValueType.INTEGER,
+    ),
+    _metric(
+        "sleep.score.feedback",
+        "Sleep feedback",
+        "Garmin sleep-score feedback text.",
+        None,
+        MetricValueType.STRING,
+        statistics=False,
+        analytics=False,
+    ),
+    _metric(
+        "sleep.score.insight",
+        "Sleep insight",
+        "Garmin sleep-score insight text.",
+        None,
+        MetricValueType.STRING,
+        statistics=False,
+        analytics=False,
+    ),
 )
 
 
