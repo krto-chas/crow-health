@@ -5,6 +5,7 @@ import pytest
 
 from crow_health.analytics import AnalyticsService
 from crow_health.evidence.models import Observation
+from crow_health.registry import UnknownMetricError
 from crow_health.snapshot import SNAPSHOT_SCHEMA_VERSION, SnapshotQuery, SnapshotService
 from crow_health.statistics import DescriptiveStatistics
 from crow_health.storage import JsonlObservationIndex, JsonlObservationStore
@@ -63,6 +64,9 @@ def test_builds_compact_snapshot_in_metric_order(tmp_path: Path) -> None:
         "sleep.score.overall",
     ]
     score = snapshot.metrics[1]
+    assert score.display_name == "Overall sleep score"
+    assert score.category == "sleep"
+    assert score.value_type == "integer"
     assert score.observation_count == 2
     assert score.latest_value == 90
     assert score.moving_average == 85
@@ -71,8 +75,10 @@ def test_builds_compact_snapshot_in_metric_order(tmp_path: Path) -> None:
     assert score.coverage_percent == 100
 
 
-def test_empty_metric_is_explicit_not_invented(tmp_path: Path) -> None:
-    snapshot = service(tmp_path, ()).build(SnapshotQuery(metrics=("missing",)))
+def test_empty_registered_metric_is_explicit_not_invented(tmp_path: Path) -> None:
+    snapshot = service(tmp_path, ()).build(
+        SnapshotQuery(metrics=("sleep.score.overall",))
+    )
 
     metric = snapshot.metrics[0]
     assert metric.observation_count == 0
@@ -84,10 +90,24 @@ def test_empty_metric_is_explicit_not_invented(tmp_path: Path) -> None:
 
 def test_deduplicates_metrics_deterministically(tmp_path: Path) -> None:
     snapshot = service(tmp_path, ()).build(
-        SnapshotQuery(metrics=("b", "a", "b"))
+        SnapshotQuery(
+            metrics=(
+                "sleep.score.overall",
+                "sleep.average_stress",
+                "sleep.score.overall",
+            )
+        )
     )
 
-    assert [item.metric for item in snapshot.metrics] == ["a", "b"]
+    assert [item.metric for item in snapshot.metrics] == [
+        "sleep.average_stress",
+        "sleep.score.overall",
+    ]
+
+
+def test_rejects_unknown_metric(tmp_path: Path) -> None:
+    with pytest.raises(UnknownMetricError):
+        service(tmp_path, ()).build(SnapshotQuery(metrics=("missing",)))
 
 
 def test_requires_at_least_one_metric(tmp_path: Path) -> None:
@@ -98,5 +118,8 @@ def test_requires_at_least_one_metric(tmp_path: Path) -> None:
 def test_rejects_invalid_window(tmp_path: Path) -> None:
     with pytest.raises(ValueError, match="at least 1"):
         service(tmp_path, ()).build(
-            SnapshotQuery(metrics=("metric",), moving_average_window_days=0)
+            SnapshotQuery(
+                metrics=("sleep.score.overall",),
+                moving_average_window_days=0,
+            )
         )
