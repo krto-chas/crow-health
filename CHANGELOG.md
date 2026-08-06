@@ -1,6 +1,23 @@
 # Changelog
 
-## Unreleased — RC0 Pass 13
+## Unreleased — RC0 Pass 15
+
+- Added a versioned, deterministic presentation snapshot contract.
+- Added compact per-metric statistics, latest values, moving averages, trends, coverage and outlier counts.
+- Added multi-metric `snapshot-export` CLI output with optional JSON file writing.
+- Added source, parser and explicit time-range filtering.
+- Added synthetic tests for deterministic ordering, empty metrics and invalid windows.
+- No dashboard, Home Assistant transport, medical interpretation or generated personal snapshot has been committed.
+
+## RC0 Pass 14
+
+- Added deterministic analytics over exact numeric metrics.
+- Added calendar-window moving averages, first-to-last trends and daily completeness.
+- Added IQR-based statistical outlier identification without medical interpretation.
+- Added the `analytics` CLI command and synthetic tests.
+- No prediction, AI, correlation analysis, dashboard or Home Assistant integration has been added.
+
+## RC0 Pass 13
 
 - Added a deterministic observation catalog over the authoritative store.
 - Added per-metric counts, timestamp coverage, value types, units, parsers and source counts.
@@ -10,7 +27,7 @@
 - Added synthetic tests for ordering, filtering, mixed units, non-numeric values and empty stores.
 - No medical interpretation, metric naming registry, dashboard or Home Assistant integration has been added.
 
-## Unreleased — RC0 Pass 12
+## RC0 Pass 12
 
 - Added neutral descriptive statistics for one exact numeric metric at a time.
 - Added count, minimum, maximum, arithmetic mean and timestamp coverage.
