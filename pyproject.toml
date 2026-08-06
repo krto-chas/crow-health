@@ -19,6 +19,7 @@ dev = [
 
 [project.scripts]
 crow-health = "crow_health.cli:main"
+crow-health-ha = "crow_health.ha.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
