@@ -19,6 +19,8 @@ from crow_health.storage import JsonlObservationIndex, JsonlObservationStore
 from crow_health.timeline import ObservationTimeline, TimelineQuery
 
 API_VERSION = "crow-health.api.v1"
+ObservedFromQuery = Annotated[datetime | None, Query(alias="from")]
+ObservedToQuery = Annotated[datetime | None, Query(alias="to")]
 
 
 def create_app(
@@ -79,8 +81,8 @@ def create_app(
     @app.get("/v1/timeline")
     def timeline_query(
         day: date | None = None,
-        observed_from: datetime | None = Query(default=None, alias="from"),
-        observed_to: datetime | None = Query(default=None, alias="to"),
+        observed_from: ObservedFromQuery = None,
+        observed_to: ObservedToQuery = None,
         source_evidence_id: str | None = None,
         parser_name: str | None = None,
         metric_prefix: str | None = None,
@@ -100,8 +102,8 @@ def create_app(
     @app.get("/v1/statistics/{metric}")
     def metric_statistics(
         metric: str,
-        observed_from: datetime | None = Query(default=None, alias="from"),
-        observed_to: datetime | None = Query(default=None, alias="to"),
+        observed_from: ObservedFromQuery = None,
+        observed_to: ObservedToQuery = None,
         source_evidence_id: str | None = None,
         parser_name: str | None = None,
     ) -> Any:
@@ -120,8 +122,8 @@ def create_app(
     @app.get("/v1/snapshot")
     def snapshot(
         metric: Annotated[list[str], Query()],
-        observed_from: datetime | None = Query(default=None, alias="from"),
-        observed_to: datetime | None = Query(default=None, alias="to"),
+        observed_from: ObservedFromQuery = None,
+        observed_to: ObservedToQuery = None,
         source_evidence_id: str | None = None,
         parser_name: str | None = None,
         window_days: int = Query(default=7, ge=1),
