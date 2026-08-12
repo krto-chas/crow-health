@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — RC1 Pass 6
+
+- Added a repeatable Docker image and Docker Compose deployment for the Crow Health API.
+- Added Uvicorn as an explicit runtime dependency.
+- Added persistent bind mounts for `/srv/crow-data/health` observation and evidence data.
+- Added configurable numeric UID/GID, loopback-by-default binding, restart policy and HTTP health check.
+- Added a secret-free `.env.example`, deployment instructions and deployment-contract tests.
+- No TLS termination, reverse proxy, general API authentication, automatic backups, PostgreSQL, live Garmin retrieval or Apple Health background collection has been added.
+
 ## Unreleased — RC0 Pass 18
 
 - Added a deterministic Home Assistant MQTT discovery and state projection over versioned snapshots.
@@ -129,6 +138,7 @@
 - Added strict Garmin sleep parsing based on a value-free profile of 99 real export records and 32 observed fields.
 - Added deterministic observation identifiers and full source/parser provenance.
 - Added built-in parser registry integration.
+- Added immutable parser registry integration.
 - Added synthetic tests for valid data, deterministic IDs, malformed records and registry matching.
 - No database, analytics, Home Assistant integration or medical interpretation has been added.
 
